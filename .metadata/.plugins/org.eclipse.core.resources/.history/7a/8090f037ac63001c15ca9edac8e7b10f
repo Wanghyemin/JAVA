@@ -1,0 +1,20 @@
+package com.day2;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		//자료형 char
+		//1byte 1개 혹은 2byte 1개 / 작은따옴표
+		char ch = 'ㅁ';	
+		
+
+		System.out.println(ch);
+		
+		
+		
+		
+		
+	}
+
+}

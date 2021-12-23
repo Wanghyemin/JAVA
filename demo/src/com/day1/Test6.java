@@ -6,24 +6,24 @@ import java.io.InputStreamReader;
 
 public class Test6 {
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) throws IOException {
 
-		BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
-		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 		int area, width, height;
-		
+
 		System.out.print("πÿ∫Ø?");
 		width = Integer.parseInt(br.readLine());
-		
+
 		System.out.print("≥Ù¿Ã?");
 		height = Integer.parseInt(br.readLine());
-		
-		area = width * height / 2 ;
-		
-		System.out.println("πÿ∫Ø: " + width);		
-		System.out.println("≥Ù¿Ã: " + height);	
-		System.out.println("≥–¿Ã: " + area);	
-		
+
+		area = width * height / 2;
+
+		System.out.println("πÿ∫Ø: " + width);
+		System.out.println("≥Ù¿Ã: " + height);
+		System.out.println("≥–¿Ã: " + area);
+
 	}
 
 }

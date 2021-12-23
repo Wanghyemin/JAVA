@@ -1,0 +1,34 @@
+package com.day2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test4 {
+
+	public static void main(String[] args) throws IOException{
+
+		//제어문,반복문
+		//if, for, while, do~while, switch
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int su;
+		String str = "";
+		
+		System.out.print("수입력?");
+		su = Integer.parseInt(br.readLine());
+		
+		//if(조건)
+		if(su%2==0) {
+			str = "짝수";
+		}
+		
+		if(su%2!=0) {
+			str = "홀수";
+		}
+		
+		System.out.println(su + ":" + str);
+	}
+
+}
