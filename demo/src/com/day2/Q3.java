@@ -7,7 +7,7 @@ public class Q3 {
 	public static void main(String[] args) {
 	
 		Scanner sc = new Scanner(System.in);
-		int a,b,c,d,e,x;
+		int a,b,c,d,x;
 		
 		System.out.println("number?");
 		a = sc.nextInt();
