@@ -1,4 +1,4 @@
-package com.day2;
+package com.day1;
 
 import java.util.Scanner;
 
@@ -7,21 +7,18 @@ public class Q2 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int a,b,c;
+		int a,b;
 		
-		System.out.print("두 개의 숫자를 입력하여라.");
-
+		System.out.println("number?");
 		a = sc.nextInt();
 		b = sc.nextInt();
-		
-		if (b>a){
-			c=a;
-			a=b;
-			b=c;
+
+		if (a > b) {
+			System.out.printf("큰 숫자: %d, 작은 숫자: %d", a, b);
+		} else {
+			System.out.printf("큰 숫자: %d, 작은 숫자: %d", b, a);
 		}
-		
-		System.out.printf("큰 숫자 %d 작은 숫자 %d",a,b);
-		
+
 	}
 
 }
