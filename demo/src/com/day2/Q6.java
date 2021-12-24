@@ -1,4 +1,4 @@
-package com.day1;
+package com.day2;
 
 import java.util.Scanner;
 
@@ -7,6 +7,8 @@ public class Q6 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
+		
+		
 		int a, b, c, d;
 		String name, e;
 
@@ -26,7 +28,7 @@ public class Q6 {
 			e = "∫“«’∞›";
 		}
 
-		System.out.println("¿Ã∏ß: " + name + "\n√—¡° : " + d + ", ∆Ú±’: " + d / 3 + ", ∆«¡§: " + e);
+		System.out.println("¿Ã∏ß: " + name + "\n√—¡°: " + d + ", ∆Ú±’: " + d / 3 + ", ∆«¡§: " + e);
 
 	}
 
