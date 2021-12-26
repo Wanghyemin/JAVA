@@ -4,7 +4,7 @@ public class Test4 {
 
 	public static void main(String[] args) {
 
-		// 다중 for문 시작
+		// 이중 for문
 
 		int i, j;
 
@@ -14,13 +14,10 @@ public class Test4 {
 
 			for (j = 1; j <= 9; j++) {
 				System.out.println(i + "*" + j + "=" + (i * j));
-/*				System.out.printf("%d * %d = %d",i,j,(i*j));*/
 			}
 
 			System.out.println();
 		}
-		
-		// 다중 for문 끝
 
 	}
 

@@ -20,7 +20,7 @@ public class Test7 {
 
 		System.out.print("¿¬»êÀÚ[+,-,*,/]?");
 		oper = (char) System.in.read();
-
+		
 		switch (oper) {
 
 		case '+':

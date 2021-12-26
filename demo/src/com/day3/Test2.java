@@ -7,7 +7,7 @@ public class Test2 {
 
 	public static void main(String[] args) throws IOException {
 
-		// 입력한 수까지의 합계를 구하기
+		// while, do-while문 : 1부터 입력한 수까지의 합계를 구하기
 
 		Scanner sc = new Scanner(System.in);
 
@@ -17,24 +17,24 @@ public class Test2 {
 		while (true) {// 무한루프
 
 			do {
-				System.out.println("원하는 수"); // 100
+				System.out.print("수를 입력하세요"); // 100
 				su = sc.nextInt();
 			} while (su < 1 || su > 5000); // while(안되는 경우)
 
 			sum = 0;
 			for (int i = 1; i <= su; i++) {
-				sum += i; // sum = sum + i;
+				sum += i; 
 			}
 
 			System.out.println("1~" + su + "까지의 합: " + sum);
 
-			System.out.println("계속할래?[Y/N]");//
+			System.out.print("계속할래?[Y/N]");//
 			ch = (char) System.in.read();
 
 			if (ch != 'Y' && ch != 'y') {
-				System.out.println("프로그램 종료");
+				System.out.print("프로그램 종료");
 				break;
-				// while,do-while,for,switch
+			// break는 while,do-while,for,switch에서 사용 가능
 			}
 
 		}

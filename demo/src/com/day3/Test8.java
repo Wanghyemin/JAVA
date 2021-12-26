@@ -6,8 +6,9 @@ public class Test8 {
 
 	public static void main(String[] args) {
 
-		// 배열
+		// for문 : 배열
 		// int num[] = new int[5]
+		
 		int[] num = new int[5];
 
 		Scanner sc = new Scanner(System.in);
@@ -24,6 +25,9 @@ public class Test8 {
 
 		System.out.println("배열 갯수: " + num.length);
 
+		
+		//num[0]는 변경 가능하며, 연산이 가능하다.
+		
 		num[3] = 100;
 		System.out.println("num[3]: " + num[3]);
 		
