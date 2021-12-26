@@ -12,26 +12,21 @@ public class Q2 {
 
 		Scanner sc = new Scanner(System.in);
 
-		int i, sum;
+		int i, j;
 
-		sum = 0;
+		j = 0;
 		for (i = 1; i <= 100; i++) {
 			if (i % 3 == 0) {
-				sum++;
+				j++;
 			}
 		}
-		
-		
-		sum = 0;
+		System.out.println("3의 배수의 개수 : " + j);
+
+		j = 0;
 		for (i = 1; i <= 100; i++) {
-			sum = i%3==0?sum++:sum;
-			}
+			j = i % 3 == 0 ? j++ : j;
 		}
-
-		
-		
-
-		System.out.println("3의 배수의 개수 : " + sum);
+		System.out.println("3의 배수의 개수 : " + j);
 
 	}
 
