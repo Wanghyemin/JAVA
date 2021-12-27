@@ -10,33 +10,31 @@ public class Test4 {
 
 		// 제어문,반복문
 		// if, for, while, do~while, switch
-
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		int su;
-		String str = "";
+		String str = null;
 
-		System.out.print("수입력?");
+		System.out.print("수 입력?");
 		su = Integer.parseInt(br.readLine());
 
-		/*
-		 * 단일 if문 (조건) 
-		 * 
-		 * if(su%2==0) { str = "짝수"; }
-		 * 
-		 * if(su%2!=0) { str = "홀수"; }
-		 * 
-		 * System.out.println(su + ":" + str);
-		 * 
-		 */
+		// 단일 if문 (조건)
+		if (su % 2 == 0) {
+			str = "짝수";
+		}
+		if (su % 2 != 0) {
+			str = "홀수";
+		}
+		System.out.println(su + ": " + str);
 
+		// if, else문
 		if (su % 2 == 0) {
 			str = "짝수";
 		} else {
 			str = "홀수";
 		}
-		System.out.println(su + ":" + str);
-
+		System.out.println(su + ": " + str);
+		
 	}
-
+	
 }

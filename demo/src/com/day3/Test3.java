@@ -6,24 +6,28 @@ public class Test3 {
 
 		int n, sum;
 
-		sum = 0;
+		// for 문 
+		
 		// 100까지의 합
+		sum = 0;
 		for (n = 1; n <= 100; n++) {
 			sum += n;
 		}
 
-		sum = 0;
 		// 홀수의 합
+		sum = 0;
 		for (n = 1; n <= 100; n += 2) {
 			sum += n;
 		}
-		sum = 0;
+		
 		// 짝수의 합
+		sum = 0;
 		for (n = 0; n <= 100; n += 2) {
 			sum += n;
 		}
-		sum = 0;
+		
 		// 3의 배수의 합
+		sum = 0;
 		for (n = 0; n <= 100; n += 3) {
 			sum += n;
 		}

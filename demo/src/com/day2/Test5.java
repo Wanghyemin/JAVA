@@ -8,17 +8,16 @@ public class Test5 {
 
 		Scanner sc = new Scanner(System.in);
 
-		String name;
+		String name, pan;
 		int kor;
 
-		System.out.println("이름?");// lisa
+		System.out.print("이름?");// lisa
 		name = sc.next();
 
-		System.out.println("국어?");
+		System.out.print("국어?");
 		kor = sc.nextInt();
 
-		String pan;
-
+		// else if문
 		if (kor >= 90) {
 			pan = "수";
 		} else if (kor >= 80) {
@@ -30,8 +29,7 @@ public class Test5 {
 		} else {
 			pan = "가";
 		}
-
-		System.out.println(name + ":" + pan);
+		System.out.println(name + ": " + pan);
 
 	}
 

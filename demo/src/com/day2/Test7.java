@@ -7,14 +7,11 @@ public class Test7 {
 	public static void main(String[] args) {
 
 		// 세 개의 수를 입력 받아서 작은 수에서 큰 수 순으로 출력 (오름차순 정렬)
-		// 세 개의 수? 9 5 2
-		// 결과: 2 5 9
-
 		
 		//선언
 		Scanner sc = new Scanner(System.in);
 
-		int num1, num2, num3, temp;
+		int num1, num2, num3, temp; // 9 5 2
 		
 		//입력
 		System.out.print("num1,num2,num3?");
@@ -43,7 +40,7 @@ public class Test7 {
 		}
 		
 		//출력
-		System.out.println(num1 +","+ num2 +","+ num3);
+		System.out.println(num1 +","+ num2 +","+ num3); //2 5 9
 		System.out.printf("결과: %d %d %d",num1,num2,num3);
 
 	}

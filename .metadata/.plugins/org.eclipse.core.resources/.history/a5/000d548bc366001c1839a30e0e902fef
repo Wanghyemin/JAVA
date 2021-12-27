@@ -1,0 +1,35 @@
+package com.day4;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		int[] num = {50,42,41,2,16};
+		int i,j,temp;
+		
+		System.out.print("Source Data: ");
+		for(i=0;i<num.length;i++) {
+			System.out.printf("%3d",num[i]);
+		}
+		System.out.println();
+			
+		// Selection Sort
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		System.out.print("Sorted Data: ");
+		for(int k : num) {
+			System.out.printf("%3d",num[k]);
+		}
+		System.out.println();
+		
+	}
+
+}

@@ -6,14 +6,15 @@ public class Test6 {
 
 	public static void main(String[] args) {
 
+		// switch : 제어문
+		
 		Scanner sc = new Scanner(System.in);
 
 		int su;
 
 		System.out.print("1~3 이내의 수?");
 		su = sc.nextInt();
-
-		// 제어문 switch
+		
 		switch (su) {
 
 		case 3:

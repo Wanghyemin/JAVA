@@ -6,7 +6,9 @@ public class Test5 {
 
 		int i, j;
 
-/*		for (i = 1; i <= 5; i++) {
+		// 다중 for 문 (나비, 삼각형, 모래시계)
+		
+		for (i = 1; i <= 5; i++) {
 
 			for (j = 1; j <= 5 - i; j++) {
 				System.out.print(" ");
@@ -19,7 +21,7 @@ public class Test5 {
 		}
 
 		for (i = 5; i >= 1; i--) {
-			
+
 			for (j = 1; j <= 5; j++) {
 				System.out.print(" ");
 			}
@@ -29,8 +31,8 @@ public class Test5 {
 			}
 			System.out.println();
 
-		}*/
-		
+		}
+
 		for (i = 1; i <= 5; i++) {
 
 			for (j = 1; j <= 5 - i; j++) {
@@ -54,8 +56,7 @@ public class Test5 {
 			}
 			System.out.println();
 		}
-		
-		
+
 		for (i = 5; i >= 2; i--) {
 
 			for (j = 1; j <= 5 - i; j++) {
@@ -79,20 +80,6 @@ public class Test5 {
 			}
 			System.out.println();
 		}
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
 	}
 

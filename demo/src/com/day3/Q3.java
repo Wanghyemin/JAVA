@@ -12,32 +12,40 @@ public class Q3 {
 		 */
 
 		Scanner sc = new Scanner(System.in);
-		
-		int a,b,c,suma,sumb;
-		suma = 0;
-		sumb = 0;
-		
+
+		int a, b, c, sum;
+
+		sum = 0;
+
 		System.out.println("두 개의 숫자를 입력하세요.");
 		a = sc.nextInt();
 		b = sc.nextInt();
-		
-		if (a>b) {
-			c=a;
-			a=b;
-			b=c;
+
+		if (a > b) {
+			c = a;
+			a = b;
+			b = c;
 		}
-		int i=1;
-		while(i<=b) {
-			i++;
-			sumb=sumb+i;
+
+		for (int i = a; i <= b; i++) {
+			sum += i;
 		}
-		
-		int j=1;
-		while(j<=a) {
-			j++;
-			suma=suma+j;
+		System.out.printf("%d와 %d사이 값들의 합: %d%n", a, b, sum);
+
+		 
+		// 다른 풀이
+		if (a > b) {
+			for (int i = a; i <= b; i++) {
+				sum += i;
+			}
+		} else {
+			for (int i = b; i <= a; i++) {
+				sum += i;
+			}
 		}
-		System.out.printf("합 = %d",sumb-suma);
+
+		System.out.printf("%d와 %d사이 값들의 합: %d", a, b, sum);
+
 	}
 
 }
