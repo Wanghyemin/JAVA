@@ -7,8 +7,7 @@ public class Q3 {
 	public static void main(String[] args) {
 
 		/*
-		 * 3. 두수를 입력받아 적은 수에서 큰수까지의 합 1~100 까지의 합 : 5050
-		 * 
+		 * 두 수를 입력받아 적은 수에서 큰수까지의 합 1~100 까지의 합 : 5050
 		 */
 
 		Scanner sc = new Scanner(System.in);
@@ -21,6 +20,13 @@ public class Q3 {
 		a = sc.nextInt();
 		b = sc.nextInt();
 
+/*		if (a > b) {
+			a = a ^ b;
+			b = a ^ b;
+			a = a ^ b;
+		}
+*/
+		
 		if (a > b) {
 			c = a;
 			a = b;
