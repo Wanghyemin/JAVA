@@ -1,0 +1,29 @@
+package com.day5;
+
+import java.util.Scanner;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		int[] num = {37,26,19,12,7};
+		
+		int i,j,temp;
+		
+		System.out.println("Source Data: ");
+		for(i=0;i<num.length;i++) {
+			System.out.printf("%4d",num[i]);
+		}
+		System.out.println();
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

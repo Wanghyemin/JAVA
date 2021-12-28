@@ -12,6 +12,7 @@ public class Test2 {
 		Scanner sc = new Scanner(System.in);
 
 		int[] months = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		String[] yoil = { "일", "월", "화", "수", "목", "금", "토" };
 		int y, m, d, nalsu, week;
 
 		do {
@@ -24,14 +25,15 @@ public class Test2 {
 			m = sc.nextInt();
 		} while (m < 1 || m > 12);
 
+		if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
+			months[1] = 29;
+		}
+
 		do {
 			System.out.print("일?");
 			d = sc.nextInt();
 		} while (d < 1 || d > months[m - 1]);
 
-		if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
-			months[1] = 29;
-		}
 		nalsu = 365 * (y - 1) + (y - 1) / 4 - (y - 1) / 100 + (y - 1) / 400;
 
 		for (int i = 0; i < m - 1; i++) {
@@ -42,9 +44,10 @@ public class Test2 {
 
 		week = nalsu % 7;
 
-		System.out.printf("%d년 %d월 %d일 ", y, m, d);
-
-		switch (week) {
+		System.out.printf("%d년 %d월 %d일 %s요일", y, m, d, yoil[week]);
+		
+	/*
+	 * switch (week) {
 		case 0:
 			System.out.println("일요일");
 			break;
@@ -67,7 +70,7 @@ public class Test2 {
 			System.out.println("토요일");
 			break;
 		}
-
+*/
 	}
 
 }

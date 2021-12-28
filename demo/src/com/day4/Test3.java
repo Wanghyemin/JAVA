@@ -35,9 +35,7 @@ public class Test3 {
 		for (i = 0; i < num.length - 1; i++) {
 
 			for (j = i + 1; j < num.length; j++) {
-
-				// System.out.println(i+":"+j);
-
+				
 				if (num[i] > num[j]) {
 					temp = num[i];
 					num[i] = num[j];
@@ -48,7 +46,7 @@ public class Test3 {
 
 		}
 
-		// 확장for문
+		// 확장 for문: 배열 구조일때 사용
 		System.out.print("Sorted Data:");
 		
 		for (int k : num) {

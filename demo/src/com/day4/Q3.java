@@ -18,22 +18,22 @@ public class Q3 {
 		Scanner sc = new Scanner(System.in);
 		Random rd = new Random();
 
-		String[] rcp = { "가위", "바위", "보" };
+		String[] a = { "가위", "바위", "보" };
 
-		int com, human;
+		int c, d; // c: 컴퓨터, d: 사람
 
-		com = rd.nextInt(3);
+		c = rd.nextInt(3);
 
 		System.out.print("1(가위), 2(바위) 3(보) 중 하나를 입력하세요");
-		human = sc.nextInt() - 1;
+		d = sc.nextInt() - 1;
 
-		System.out.printf("컴퓨터: %s, 사람: %s %n", rcp[com], rcp[human]);
+		System.out.printf("컴퓨터: %s, 사람: %s %n", a[c], a[d]);
 
-		if (com == human) {
+		if (c == d) {
 
 			System.out.println("비겼습니다.");
 
-		} else if (com + 2 == human || com - 1 == human) {
+		} else if (c + 2 == d || c - 1 == d) {
 
 			System.out.println("컴퓨터가 이겼습니다.");
 
