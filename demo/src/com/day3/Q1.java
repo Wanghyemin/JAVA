@@ -8,61 +8,39 @@ public class Q1 {
 		 * 1¿¡¼­ 100±îÁö ¼öÀÇ È¦¼öÀÇ ÇÕ, Â¦¼öÀÇ ÇÕ, ÀüÃ¼ÀÇ ÇÕ Â¦¼öÇÕ : 2550 È¦¼öÇÕ : 2500 ÇÕ : 5050
 		 */
 
-		int sum1, sum2, sum3;
+		int sum1 = 0, sum2 = 0, sum3 = 0;
 
-		sum1 = 0;
 		for (int i = 1; i <= 100; i += 2) {
-			sum1 += i;
-		}
-		sum2 = 0;
-		for (int i = 0; i <= 100; i += 2) {
-			sum2 += i;
-		}
-		sum3 = 0;
-		for (int i = 1; i <= 100; i++) {
-			sum3 += i;
+			sum1 += i; // È¦¼ö ÇÕ
 		}
 
-		System.out.printf("È¦¼öÇÕ: %d, Â¦¼öÇÕ: %d, ÃÑÇÕ: %d", sum1, sum2, sum3);
-		
-		
+		for (int i = 0; i <= 100; i += 2) {
+			sum2 += i; // Â¦¼ö ÇÕ
+		}
+
+		for (int i = 1; i <= 100; i++) {
+			sum3 += i; // ÀüÃ¼ ÇÕ
+		}
+
+		System.out.printf("È¦¼öÇÕ: %d, Â¦¼öÇÕ: %d, ÃÑÇÕ: %d%n", sum1, sum2, sum3);
+
 		// ¼±»ı´Ô ´ä¾È
 		
-/*		int n=0, s1, s2, s3;
-
-		s1=s2=s3=0;
-		while(n<100) {
-			n++;
-			if(n%2==0)
-			   s1+=n;
-			else
-			   s2+=n;
+		int i = 0; sum1 = sum2 = sum3 = 0;
+		
+		while (i < 100) {
+			i++;
 			
-			s3+=n;
+			if (i % 2 == 0) {
+				sum2 += i;
+			} else if (i % 2 != 0) {
+				sum1 += i;
+			}
+			
+			sum3 += i;
 		}
-
-		System.out.println("Â¦¼öÇÕ : "+s1);
-		System.out.println("È¦¼öÇÕ : "+s2);
-		System.out.println("ÇÕ : "+s3);
-*/
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.printf("È¦¼öÇÕ: %d, Â¦¼öÇÕ: %d, ÃÑÇÕ: %d", sum1, sum2, sum3);
 
 	}
 

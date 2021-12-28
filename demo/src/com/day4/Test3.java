@@ -14,13 +14,19 @@ public class Test3 {
 
 		System.out.print("다섯개의 숫자를 입력하세요");
 
-		for (i = 0; i < 5; i++) {
+		for (i=0; i < 5; i++) {
 			num[i] = sc.nextInt();
 		}
 
 		System.out.print("Source Data:");
+		
+/*		for(int m : num) {
+			System.out.printf("%4d",m);
+		}
+*/
+			
 		for (i = 0; i < num.length; i++) {
-			System.out.printf("%4d", num[i]);
+			System.out.printf("%4d", num[i]); // %4d : 4바이트 정수
 		}
 		System.out.println();
 
@@ -44,7 +50,9 @@ public class Test3 {
 
 		// 확장for문
 		System.out.print("Sorted Data:");
+		
 		for (int k : num) {
+			
 			System.out.printf("%4d", k);
 		}
 		System.out.println();
