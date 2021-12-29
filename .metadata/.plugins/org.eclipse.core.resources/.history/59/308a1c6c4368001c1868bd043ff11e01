@@ -56,8 +56,6 @@ public class Test3 {
 		} else {
 			System.out.println("부정확한 주민번호");
 		}
-		
-		//return; 생략
 	}
 
 }

@@ -51,7 +51,7 @@ public class Rect2 {
 
 	public void print(int a, int b) {
 		
-		System.out.print("오름차순:");
+		System.out.print("오름차순: ");
 		for (i = 0; i < 5; i++) {
 			a = num[i] ;
 			System.out.printf("%4d",a);

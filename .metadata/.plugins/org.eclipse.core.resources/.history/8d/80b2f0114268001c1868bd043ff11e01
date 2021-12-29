@@ -50,15 +50,12 @@ public class Rect2 {
 
 
 	public void print(int a, int b) {
-		
-		System.out.print("오름차순:");
+
 		for (i = 0; i < 5; i++) {
 			a = num[i] ;
-			System.out.printf("%4d",a);
+			System.out.printf("오름차순: %4d",a);
 		}
-		
 		System.out.println();
-		
 		System.out.print("총합: "+ b);
 	}
 }
