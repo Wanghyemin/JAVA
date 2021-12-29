@@ -1,0 +1,9 @@
+package com.score1;
+
+public class HealthMain {
+
+	public static void main(String[] args) {
+
+	}
+
+}

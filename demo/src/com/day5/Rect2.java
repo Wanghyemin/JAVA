@@ -51,6 +51,8 @@ public class Rect2 {
 
 	public void print(int a, int b) {
 		
+
+		
 		System.out.print("오름차순:");
 		for (i = 0; i < 5; i++) {
 			a = num[i] ;
@@ -62,3 +64,37 @@ public class Rect2 {
 		System.out.print("총합: "+ b);
 	}
 }
+
+
+
+
+
+/*
+
+
+public void print(int r, int t) {
+
+    for (i = 0; i < 5; i++) {
+       System.out.print(num[i] + "  ");
+    }
+    System.out.println();
+
+    System.out.println(t);
+ }
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+package com.score1;
+
+public class Record1 {
+ 
+	String name;
+	String[] title = {"Å°", "¸ö¹«°Ô"};
+	int[] b = new int [2];
+	int bmi;
+}
