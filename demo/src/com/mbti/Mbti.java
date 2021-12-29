@@ -1,6 +1,5 @@
 package com.mbti;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Mbti {
@@ -26,7 +25,6 @@ public class Mbti {
 
 			r[i] = new RecordM();
 			
-		
 			System.out.println("¿Ã∏ß?");
 			r[i].name = sc.next();
 
