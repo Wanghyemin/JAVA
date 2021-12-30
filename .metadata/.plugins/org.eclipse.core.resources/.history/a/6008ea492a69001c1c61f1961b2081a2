@@ -1,0 +1,14 @@
+package com.day7;
+
+public class Data {
+
+	String name = "배수지";
+	int age = 27;
+	
+	public void print() {
+		System.out.println(name+"의 나이는 "+age+"살 입니다.");
+	}
+	
+	
+	
+}

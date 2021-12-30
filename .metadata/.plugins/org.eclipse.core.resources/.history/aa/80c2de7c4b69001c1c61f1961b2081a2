@@ -1,0 +1,18 @@
+package com.day6;
+
+class SubClass { 
+	
+	int a;
+	int b; // 전역변수 instance변수 (<-> 지역변수)
+}
+public class Demo {
+	public static void main(String[] args) {
+		
+		SubClass ob = new SubClass();
+		SubClass ob1 = new SubClass();
+		
+		System.out.println(ob.a);
+		System.out.println(ob1.a);
+	}
+
+}

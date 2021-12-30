@@ -1,0 +1,51 @@
+package com.day7;
+
+class Rect {
+
+	private int w, h;
+
+	public void set(int w, int h) {
+		this.w = w;
+		this.h = h;
+	}
+
+	public int area() {
+		return w * h;
+	}
+
+	public int length() {
+		return 2 * (w + h);
+	}
+
+	public void print(int a, int l) {
+
+		System.out.println("가로: " + w);
+		System.out.println("세로: " + h);
+		System.out.println("면적: " + a);
+		System.out.println("둘레: " + l);
+	}
+
+	public void write() {
+		System.out.println("가로: " + w);
+		System.out.println("세로: " + h);
+	}
+
+}
+
+public class Test4 {
+
+	public static void main(String[] args) {
+
+		Rect ob = new Rect();
+
+		ob.set(10, 20);
+
+		int a = ob.area();
+		int l = ob.length();
+
+		ob.print(a, l);
+		ob.write();
+
+	}
+
+}

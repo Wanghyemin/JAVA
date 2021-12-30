@@ -49,7 +49,7 @@ public class Score {
 
 	}
 
-	private void ranking() { //외부 출입 제한
+	private void ranking() { //외부 출입 제한 : 같은 Class 안의 Method에서는 호출 가능
 
 		int i, j;
 		for (i = 0; i < inwon; i++) {

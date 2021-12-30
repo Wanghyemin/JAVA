@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.lang.Readable"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
@@ -13,11 +12,19 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.day5.Rect"/>
-<fullyQualifiedTypeName name="com.day6.SubClass"/>
 <fullyQualifiedTypeName name="com.day6.Hap"/>
 <fullyQualifiedTypeName name="com.score1.Score"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.score1.Record1"/>
 <fullyQualifiedTypeName name="com.score1.Health"/>
+<fullyQualifiedTypeName name="com.day7.Circle"/>
+<fullyQualifiedTypeName name="com.day7.Data"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.day7.Rect"/>
+<fullyQualifiedTypeName name="com.day7.Test5"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.day7.RectA"/>
+<fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
+<fullyQualifiedTypeName name="com.day6.SubClass"/>
+<fullyQualifiedTypeName name="com.day6.Demo"/>
 </qualifiedTypeNameHistroy>
