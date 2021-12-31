@@ -29,6 +29,7 @@ class Rect {
 	// 통일시키는 작업으로 메소드의 이름은 동일하지만
 	// 괄호속의 인수의 개수나 인수의 자료형을 다르게 주면
 	// 각각 다른 메소드로 인식을 한다.
+	
 	public void print() {
 		System.out.println("가로: " + w);
 		System.out.println("세로: " + h);

@@ -21,10 +21,15 @@
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="com.day7.Rect"/>
 <fullyQualifiedTypeName name="com.day7.Test5"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.day7.RectA"/>
 <fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
 <fullyQualifiedTypeName name="com.day6.SubClass"/>
 <fullyQualifiedTypeName name="com.day6.Demo"/>
+<fullyQualifiedTypeName name="com.day8.Test"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="com.day8.Rect"/>
+<fullyQualifiedTypeName name="com.rank.Score"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.rank.Record"/>
 </qualifiedTypeNameHistroy>

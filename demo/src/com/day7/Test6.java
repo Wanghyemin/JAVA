@@ -1,7 +1,5 @@
 package com.day7;
 
-import java.util.Scanner;
-
 class RectA {
 
 	private int w, h;
