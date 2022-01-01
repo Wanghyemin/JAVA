@@ -1,0 +1,52 @@
+package com.day7;
+
+public class Demo {
+
+	public static int a = 10; 
+	
+	private int b = 20;
+
+	public void write() {
+		System.out.println("class 변수 a: "+a);
+		System.out.println("instance 변수 b: "+ b);
+	}
+
+	public static void print() {
+		System.out.println("class 변수 a: "+a);
+	}
+
+	public static void main(String[] args) { 
+
+		System.out.println("class변수 : "+ a); 
+		System.out.println("class변수 : "+ Test2.a); 
+		
+		print();
+		Demo.print();
+		
+		
+		Demo ob = new Demo();
+		System.out.println("class변수 : "+ ob.a); 
+		System.out.println("instance 변수 b: "+ ob.b);
+		ob.print();
+		ob.write();
+		System.out.println("------------------------");
+		
+		Demo ob2 = new Demo();
+		ob2.a = 100;
+		ob2.b = 200;
+		ob2.write();
+		System.out.println("------------------------");
+		
+		Demo ob3 = new Demo();
+		ob3.a = 1000;
+		ob3.b = 2000;
+		ob3.write();
+		
+		System.out.println("------------------------");
+		ob.write();
+		ob2.write();
+		ob3.write();
+		
+	}
+
+}
