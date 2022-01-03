@@ -20,6 +20,7 @@ public class Rect2 {
 
 	}
 
+	
 	public int array() {
 
 		for (i = 0; i < num.length - 1; i++) {
@@ -36,6 +37,8 @@ public class Rect2 {
 		return num[i];
 	}
 
+	
+	
 	public int tot() {
 
 		int b = 0;
@@ -45,21 +48,30 @@ public class Rect2 {
 		return b;
 	}
 
-	public void print(int a, int b) {
 
+	public void print(int a, int b) {
+		
+
+		
 		System.out.print("¿À¸§Â÷¼ø:");
 		for (i = 0; i < 5; i++) {
-			a = num[i];
-			System.out.printf("%4d", a);
+			a = num[i] ;
+			System.out.printf("%4d",a);
 		}
-
+		
 		System.out.println();
-
-		System.out.print("ÃÑÇÕ: " + b);
+		
+		System.out.print("ÃÑÇÕ: "+ b);
 	}
 }
 
+
+
+
+
 /*
+
+
 public void print(int r, int t) {
 
     for (i = 0; i < 5; i++) {
@@ -69,4 +81,20 @@ public void print(int r, int t) {
 
     System.out.println(t);
  }
+
+
+
+
+
 */
+
+
+
+
+
+
+
+
+
+
+
