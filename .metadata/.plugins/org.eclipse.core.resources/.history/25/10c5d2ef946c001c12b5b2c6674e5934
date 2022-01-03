@@ -68,7 +68,6 @@ public class Test8 {
 		c.input();
 		c.cal();
 		c.print();
-	
 	}
 
 }

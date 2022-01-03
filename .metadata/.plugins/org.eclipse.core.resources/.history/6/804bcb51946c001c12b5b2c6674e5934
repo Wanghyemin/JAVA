@@ -13,12 +13,22 @@ class Result {
 
 class Calc extends Result {
 
+	public Calc(String r) {
+		
+		this.str = str;
+	}
+
 	Scanner sc = new Scanner(System.in);
 	
 	private String str;
 
+
+
 	public void input() {
 
+		
+
+		
 		System.out.println("¼ö½Ä[1+2]?");
 		str = sc.next();
 
@@ -26,7 +36,6 @@ class Calc extends Result {
 	}
 
 	public void cal() {
-		
 		for (String op : new String[] { "+", "-", "*", "/" }) {
 			int pos = str.indexOf(op);
 
@@ -68,7 +77,6 @@ public class Test8 {
 		c.input();
 		c.cal();
 		c.print();
-	
 	}
 
 }

@@ -26,7 +26,6 @@ class Calc extends Result {
 	}
 
 	public void cal() {
-		
 		for (String op : new String[] { "+", "-", "*", "/" }) {
 			int pos = str.indexOf(op);
 
@@ -68,7 +67,6 @@ public class Test8 {
 		c.input();
 		c.cal();
 		c.print();
-	
 	}
 
 }
