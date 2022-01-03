@@ -1,0 +1,32 @@
+package com.day9;
+
+// StringBuffer
+
+// StringBuilder
+
+public class Test4 {
+
+	public void stringTime() {
+		
+		System.out.println("String Test...");
+		
+		long start = System.currentTimeMillis();
+		System.out.println(start);
+	}
+
+	public void stringBufferTime() {
+
+	}
+
+	public void stringBuilderTime() {
+
+	}
+
+	public static void main(String[] args) {
+
+		Test4 ob = new Test4();
+		ob.stringTime();
+		
+	}
+
+}

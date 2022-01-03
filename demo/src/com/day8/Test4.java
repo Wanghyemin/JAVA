@@ -17,13 +17,13 @@ class TestC {
 
 }
 
-class RectC extends TestC {
+class RectC extends TestC { //오버로딩된 생성자
 
 	private int w, h;
 	
 	public RectC(int w,int h) {
 		
-		super("사각형");//?
+		super("사각형"); 
 		
 		this.w = w;
 		this.h = h;

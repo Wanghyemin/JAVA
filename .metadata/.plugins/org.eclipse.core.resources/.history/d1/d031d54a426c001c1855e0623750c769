@@ -1,0 +1,20 @@
+package com.day9;
+
+class TestA {
+
+	private int a = 10;
+
+	public void write() {
+
+		System.out.println("a: " + a);
+	}
+
+}
+
+public class Test2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

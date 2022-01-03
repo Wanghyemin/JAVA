@@ -1,0 +1,30 @@
+package com.day9;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+
+		String s1 = "서울,부산,대구";
+		String[] ss = s1.split(",");
+
+		for (String s : ss) {
+			System.out.print(s + " ");
+		}
+		System.out.println();
+
+		String s2 = "seoul";
+		String s3 = "Seoul";
+		System.out.println(s2.equals(s3)); // False
+		System.out.println(s2.equalsIgnoreCase(s3)); // True
+		
+		String s4 = "abc.def.hij";
+		System.out.println(s4.indexOf("."));
+		System.out.println(s4.lastIndexOf("."));
+		System.out.println(s4.indexOf("def"));
+		System.out.println(s4.indexOf("x"));
+		
+		
+		
+	}
+
+}
