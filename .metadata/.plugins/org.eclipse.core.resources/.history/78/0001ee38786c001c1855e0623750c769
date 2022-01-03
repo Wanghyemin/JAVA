@@ -6,6 +6,10 @@ class Result {
 
 	protected String r;
 
+	public Result(String r) {
+		this.r = r;
+	}
+
 	public void print() {
 		System.out.println(r);
 	}
@@ -14,7 +18,7 @@ class Result {
 class Calc extends Result {
 
 	public Calc(String r) {
-		
+		super(r);
 		this.str = str;
 	}
 

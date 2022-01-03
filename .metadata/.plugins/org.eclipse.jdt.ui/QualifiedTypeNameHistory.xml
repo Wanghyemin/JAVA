@@ -2,12 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.lang.Readable"/>
-<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.util.function.DoubleToIntFunction"/>
-<fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.day5.Rect"/>
@@ -20,24 +16,25 @@
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="com.day7.Rect"/>
 <fullyQualifiedTypeName name="com.day7.Test5"/>
-<<<<<<< HEAD
-=======
-<fullyQualifiedTypeName name="java.lang.System"/>
->>>>>>> 28a8cf39cd9928e054e756b743847d5f144fe301
 <fullyQualifiedTypeName name="com.day7.RectA"/>
 <fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
 <fullyQualifiedTypeName name="com.day6.SubClass"/>
 <fullyQualifiedTypeName name="com.day6.Demo"/>
-<<<<<<< HEAD
 <fullyQualifiedTypeName name="com.day8.Test"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="com.day8.Rect"/>
 <fullyQualifiedTypeName name="com.rank.Score"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.rank.Record"/>
-=======
-<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.day9.Circle"/>
+<fullyQualifiedTypeName name="com.day9.Rect"/>
+<fullyQualifiedTypeName name="com.day9.TestA"/>
+<fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
->>>>>>> 28a8cf39cd9928e054e756b743847d5f144fe301
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.day9.Calc"/>
 </qualifiedTypeNameHistroy>
