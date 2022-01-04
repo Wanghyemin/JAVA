@@ -28,9 +28,6 @@ public class Test4 {
 			m = sc.nextInt();
 		} while (m < 1 || m > 12);
 		
-		now.set(Calendar.YEAR, y);
-		now.set(Calendar.MONTH, m - 1);
-		
 		lastday = now.getActualMaximum(Calendar.DAY_OF_MONTH);
 		
 		do {
@@ -41,11 +38,12 @@ public class Test4 {
 		System.out.print("x¿œ »ƒ");
 		x = sc.nextInt();
 
-
+		now.set(Calendar.YEAR, y);
+		now.set(Calendar.MONTH, m - 1);
 
 
 		
-
+		now.set(y, m - 1, d);
 
 		System.out.println(lastday);
 
