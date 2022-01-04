@@ -5,11 +5,9 @@ class Test {
 	private String title;
 	protected double area;
 
-	public Test() {
-	}
+	public Test() {}
 
 	public Test(String title) {
-
 		this.title = title;
 	}
 
@@ -59,7 +57,6 @@ class Rect extends Test {
 
 	@Override
 	public void write() {
-
 		System.out.println("가로: " + w + ", 세로: " + h);
 		System.out.println("넓이: " + area);
 		// super.write();
@@ -70,11 +67,11 @@ public class Test1 {
 
 	public static void main(String[] args) {
 
-		Circle ob1 = new Circle(10);
+		Circle ob1 = new Circle(10);//오버로딩 생성자
 		ob1.circleArea();
 		ob1.write();
 
-		Rect ob2 = new Rect();
+		Rect ob2 = new Rect(); //기본 생성자(생략)
 		ob2.rectArea(10, 20);
 		ob2.write(); // 5. 부모와 자식이 같은 객체를 가지고 있으면 무조건 내꺼 쓴다.
 

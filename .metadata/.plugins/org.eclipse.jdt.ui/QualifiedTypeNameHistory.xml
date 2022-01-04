@@ -13,7 +13,6 @@
 <fullyQualifiedTypeName name="com.score1.Health"/>
 <fullyQualifiedTypeName name="com.day7.Circle"/>
 <fullyQualifiedTypeName name="com.day7.Data"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="com.day7.Rect"/>
 <fullyQualifiedTypeName name="com.day7.Test5"/>
 <fullyQualifiedTypeName name="com.day7.RectA"/>
@@ -24,7 +23,6 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="com.day8.Rect"/>
 <fullyQualifiedTypeName name="com.rank.Score"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.rank.Record"/>
 <fullyQualifiedTypeName name="com.day9.Circle"/>
 <fullyQualifiedTypeName name="com.day9.Rect"/>
@@ -33,8 +31,18 @@
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="com.day9.Calc"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="com.day9.Calc"/>
+<fullyQualifiedTypeName name="com.day10.ShapeClass"/>
+<fullyQualifiedTypeName name="javax.security.auth.login.CredentialException"/>
+<fullyQualifiedTypeName name="com.day10.Circle"/>
+<fullyQualifiedTypeName name="com.day10.Rect"/>
+<fullyQualifiedTypeName name="com.day10.Tria"/>
+<fullyQualifiedTypeName name="com.day10.SortInt"/>
+<fullyQualifiedTypeName name="com.day10.SortTest"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

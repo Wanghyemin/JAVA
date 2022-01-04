@@ -9,7 +9,7 @@ public class Test5 {
 		sb.append("서울");
 		sb.append("부산");
 
-		System.out.println(sb);
+		System.out.println(sb); // hashcode나오는게 아니라 String이 나옴
 
 		String str = sb.toString();
 		System.out.println(str);

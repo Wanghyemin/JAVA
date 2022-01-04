@@ -24,7 +24,7 @@ public class Test2 {
 
 		System.out.println("ob1: " + ob1); // ob1의 주소지 : hashcode
 		System.out.println("ob2: " + ob2); // ob2의 주소지
-		System.out.println("ob1.toString(): " + ob1.toString()); // toString는 Object의 메소드를 상속받음
+		System.out.println("ob1.toString(): " + ob1.toString()); // toString는 Object의 메소드를 상속받음 : String으로 바꿔라
 
 	}
 

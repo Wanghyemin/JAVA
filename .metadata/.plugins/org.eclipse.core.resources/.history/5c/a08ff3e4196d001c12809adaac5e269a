@@ -1,0 +1,53 @@
+package com.day10;
+
+class Test {
+
+	protected int a = 10, b = 20;
+
+	public void write() {
+
+		System.out.println("Super Class write()...");
+		System.out.println("a: " + a + ", b: " + b);
+
+	}
+
+}
+
+class Demo extends Test {
+
+	protected int b = 30, c = 40;
+
+	@Override
+	public void write() {
+		System.out.println("Sub Class write()...");
+		System.out.println("a: " + a + ",b: " + b + " ,c:" + c); // 10 30 40
+		System.out.println("super.b: " + super.b); //20
+	}
+
+	public void print1() {
+
+		System.out.println("Sub Class print1()에서 write()호출... ");
+		write();
+	}
+
+	public void print2() {
+
+		System.out.println("Sub Class print2()에서 write()호출... ");
+		super.write();
+	}
+}
+
+public class Test5 {
+
+	public static void main(String[] args) {
+
+		Demo ob = new Demo();
+		ob.write();
+		
+		
+		
+		
+		
+	}
+
+}

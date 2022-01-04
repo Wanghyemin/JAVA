@@ -18,10 +18,11 @@ public class Test6 {
 		System.out.println(s2.equalsIgnoreCase(s3)); // True
 
 		String s4 = "abc.def.hij";
-		System.out.println(s4.indexOf("."));
-		System.out.println(s4.lastIndexOf("."));
-		System.out.println(s4.indexOf("def"));
-		System.out.println(s4.indexOf("x"));
+		//			 01234567890
+		System.out.println(s4.indexOf(".")); //3
+		System.out.println(s4.lastIndexOf(".")); //7
+		System.out.println(s4.indexOf("def")); //4
+		System.out.println(s4.indexOf("x")); //-1
 
 		String s5 = "우리나라 대한민국 좋은나라 대한민국";
 		String s6 = s5.replaceAll("대한", "大韓");
