@@ -1,0 +1,59 @@
+package com.day10;
+
+import java.util.Calendar;
+// 년,월,일을 입력받아 100일 후 년월일(요일) 로 출력하시오
+/*
+		 년도?2016
+		 월?4
+		 일:20
+		 몇일후?100
+	
+		 만 만 날 : 2016년 4월 20일 수요일
+		 100일 후 : 2016년 7월 29일 금요일
+ */
+import java.util.Scanner;
+
+public class Test10 {
+	Scanner sc = new Scanner(System.in);
+	
+	public Test10() {
+		start();
+	}
+	public void start() {
+		int y = setMessage("년도");
+		int m = setMessage("월");
+		int d = setMessage("일");
+		int afterday = setMessage("몇일후");
+		date(y,m,d,afterday);
+	}
+	public int setMessage(String msg) {
+		System.out.print(msg + " > ");
+		int answer = sc.nextInt();
+		return answer;
+	}
+	
+	public void date(int y,int m , int d , int afterday) {
+		Calendar now = Calendar.getInstance();
+		now.set(y, m-1 , d);
+		
+		int w = now.get(Calendar.DAY_OF_WEEK);
+		String[] week = {"일","월","화","수","목","금","토"};
+		
+		System.out.printf("만 난 날 : %d년 %d월 %d일 %s요일\n"
+				, now.get(Calendar.YEAR)
+				, now.get(Calendar.MONTH) + 1
+				, now.get(Calendar.DAY_OF_MONTH)
+				, week[w-1]);
+		
+		now.set(y, m-1 , d + afterday);
+		w = now.get(Calendar.DAY_OF_WEEK);
+		System.out.printf("만 난 날 : %d년 %d월 %d일 %s요일"
+				, now.get(Calendar.YEAR)
+				, now.get(Calendar.MONTH) + 1
+				, now.get(Calendar.DAY_OF_MONTH)
+				, week[w-1]);
+	}
+	public static void main(String[] args) {
+		new Test4();
+	}
+}
