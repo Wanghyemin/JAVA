@@ -1,0 +1,87 @@
+package com.day11;
+
+interface FruitA {
+
+	String Won = "원";
+
+	public int getPrice();
+
+	public String getName();
+
+}
+
+interface ItemFruit extends FruitA { //상속 가능 
+
+	public String getItems();
+
+}
+
+class Orange implements ItemFruit {
+
+	@Override
+	public int getPrice() {
+		return 1500;
+	}
+
+	@Override
+	public String getName() {
+		return "오렌지";
+	}
+
+	@Override
+	public String getItems() {
+		return "과일";
+
+	}
+
+}
+
+class Apple implements ItemFruit {
+
+	@Override
+	public int getPrice() {
+		return 2000;
+	}
+
+	@Override
+	public String getName() {
+		return "사과";
+	}
+
+	@Override
+	public String getItems() {
+		return "과일";
+	}
+
+}
+
+public class Test5 {
+
+	public static void main(String[] args) {
+		
+		ItemFruit ob1 = new Orange();
+		System.out.println(ob1.getItems());
+		System.out.println(ob1.getName());
+		System.out.println(ob1.getPrice()+FruitA.Won);
+		
+		Apple ob2 = new Apple();
+		System.out.println(ob2.getItems());
+		System.out.println(ob2.getName());
+		System.out.println(ob2.getPrice()+FruitA.Won);
+		
+		/*
+		int a;
+		a = 10;
+		System.out.println(a); //10
+	
+		int b;
+		b = 20;
+		System.out.println(b); //20
+		*/
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.day12;
+
+// 1. 내부클래스 (Inner)
+
+class Outer1{
+	
+	static int a = 10;
+	int b = 20;
+	
+	public class Inner{ // class 안에 class 만들 수 있다
+		
+		int c = 30;
+		public void write() {
+			
+			System.out.println(a);
+			System.out.println(b);
+			System.out.println(c);
+		}
+		
+		
+		
+	}
+	
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package com.day12;
+
+import java.util.Vector;
+
+// Collection Framework (방법론)
+
+// 배열의 단점
+// 1. 크기를 정하면 변경이 불가능
+// 2. 미리 크게 잡으면 메모리 낭비가 될 수 있음
+// 3. 배열 사이에 삽입이 불가능
+
+// List, Vector, Set, Map, Hashtable, TreeSet, HashSet
+
+// List(I) - ArrayList(C) 동기화X , Vector(C) 동기화 O
+// Map(I) - Hashtable(C), HashSet(C)
+
+public class Test5 {
+
+	private static final String[] city = {
+			"서울", "부산", "대구", "인천", "광주", "대전", "울산"
+
+	};
+
+	public static void main(String[] args) {
+
+		Vector v = new Vector<>();
+		
+		v.add("서울"); // UPCAST
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

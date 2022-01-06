@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Float"/>
-<fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="java.lang.Readable"/>
-<fullyQualifiedTypeName name="java.util.function.DoubleToIntFunction"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="com.day5.Rect"/>
-<fullyQualifiedTypeName name="com.day6.Hap"/>
-<fullyQualifiedTypeName name="com.score1.Score"/>
 <fullyQualifiedTypeName name="com.score1.Record1"/>
 <fullyQualifiedTypeName name="com.score1.Health"/>
 <fullyQualifiedTypeName name="com.day7.Circle"/>
@@ -16,7 +7,6 @@
 <fullyQualifiedTypeName name="com.day7.Rect"/>
 <fullyQualifiedTypeName name="com.day7.Test5"/>
 <fullyQualifiedTypeName name="com.day7.RectA"/>
-<fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
 <fullyQualifiedTypeName name="com.day6.SubClass"/>
 <fullyQualifiedTypeName name="com.day6.Demo"/>
 <fullyQualifiedTypeName name="com.day8.Test"/>
@@ -32,11 +22,8 @@
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="com.day9.Calc"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.day10.ShapeClass"/>
 <fullyQualifiedTypeName name="javax.security.auth.login.CredentialException"/>
 <fullyQualifiedTypeName name="com.day10.Circle"/>
@@ -45,4 +32,32 @@
 <fullyQualifiedTypeName name="com.day10.SortInt"/>
 <fullyQualifiedTypeName name="com.day10.SortTest"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.day11.TestA"/>
+<fullyQualifiedTypeName name="com.day11.TestB"/>
+<fullyQualifiedTypeName name="com.day11.SuperTest"/>
+<fullyQualifiedTypeName name="com.day11.subTest"/>
+<fullyQualifiedTypeName name="com.day11.FruitImpl"/>
+<fullyQualifiedTypeName name="com.day11.TestImpl"/>
+<fullyQualifiedTypeName name="com.day11.Test5"/>
+<fullyQualifiedTypeName name="com.day11.Apple"/>
+<fullyQualifiedTypeName name="com.score2.Record"/>
+<fullyQualifiedTypeName name="com.score2.ScoreImpl"/>
+<fullyQualifiedTypeName name="com.day12.Outer1.Inner1"/>
+<fullyQualifiedTypeName name="com.day12.Outer2"/>
+<fullyQualifiedTypeName name="com.day12.Test4"/>
+<fullyQualifiedTypeName name="com.study.Score"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="com.score3.ScoreMain"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.score3.Score"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.score3.ScoreImpl"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.score3.ScoreVO"/>
 </qualifiedTypeNameHistroy>

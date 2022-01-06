@@ -1,6 +1,6 @@
 package com.day10;
 
-// Singleton : static써서 주소지 하나로
+// Singleton : 객체를 하나로
 
 class Sing {
 

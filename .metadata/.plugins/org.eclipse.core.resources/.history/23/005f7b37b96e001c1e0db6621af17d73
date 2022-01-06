@@ -1,0 +1,24 @@
+package com.score3;
+
+public class ScoreMain {
+
+	public static void main(String[] args) {
+
+		ScoreVO ob = new ScoreVO();
+		ob.setEng(55);
+		ob.setHak("111");
+		
+		System.out.println(ob.getHak());
+		System.out.println(ob.getKor());
+		
+		ob.setKor(90);
+		System.out.println(ob.getKor());
+		
+		ob = new ScoreVO();
+		
+		ob.setHak("222");
+		System.out.println(ob.getHak());
+		
+	}
+
+}

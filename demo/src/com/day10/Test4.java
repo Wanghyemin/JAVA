@@ -37,7 +37,8 @@ public class Test4 {
 			System.out.print("일?");
 			d = sc.nextInt();
 		} while (d < 1 || d > lastday);
-
+		d = now.get(Calendar.DATE);
+		
 		System.out.print("x일 후");
 		x = sc.nextInt();
 
@@ -50,11 +51,12 @@ public class Test4 {
 		System.out.printf("만 난 날 : %d년 %d월 %d일 %s요일 ", y, m, d, str[w]);
 
 		now.add(Calendar.DAY_OF_MONTH, x);
+		/*now.set(y,m-1,d+x);*/
 
 		y = now.get(Calendar.YEAR);
-		m = now.get(Calendar.MONTH) + 1;
+		m = now.get(Calendar.MONTH)+1;
 		d = now.get(Calendar.DATE);
-		w = now.get(Calendar.DAY_OF_WEEK);
+		w = now.get(Calendar.DAY_OF_WEEK)-1;
 
 		System.out.println();
 		System.out.printf("%d일 후 : %d년 %d월 %d일 %s요일 ", x, y, m, d, str[w]);

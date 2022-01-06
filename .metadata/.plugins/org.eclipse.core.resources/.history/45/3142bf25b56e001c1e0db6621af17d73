@@ -1,0 +1,37 @@
+package com.score3;
+
+import java.util.Scanner;
+
+public class ScoreImpl implements Score {
+
+	private int w, h;
+	Record rec = new Record();
+
+	Scanner sc = new Scanner(System.in);
+
+	@Override
+	public void set() {
+
+		System.out.println("가로?");
+		w = sc.nextInt();
+		System.out.println("세로?");
+		h = sc.nextInt();
+	}
+
+	@Override
+	public void input() {
+
+		rec.area = w * h;
+		rec.length = (w + h) * 2;
+	}
+
+	@Override
+	public void print() {
+		
+		System.out.println("넓이: "+rec.area+", 둘레: "+rec.length);
+		
+		
+		
+	}
+
+}

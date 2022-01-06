@@ -1,0 +1,63 @@
+package com.score3;
+
+public class ScoreVO { // Value Object : 데이터를 저장
+
+	private String hak;
+	private String name;
+	private int kor;
+	private int eng;
+	private int mat;
+
+	public ScoreVO() {
+	}
+
+	public ScoreVO(String hak, String name, int kor, int eng, int mat) { //오버로딩 생성자
+
+		this.hak = hak;
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+
+	public void setData(String hak, String name, int kor, int eng, int mat) { // 메소드
+
+		this.hak = hak;
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+	
+	public void setHak(String hak) {
+		this.hak = hak;
+	}
+	public void setname(String name) {
+		this.name = name;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

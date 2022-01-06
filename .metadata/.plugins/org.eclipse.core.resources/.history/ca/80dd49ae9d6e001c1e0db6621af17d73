@@ -1,0 +1,28 @@
+package com.day12;
+
+import java.util.Vector;
+
+public class Test6 {
+
+	private static final String[] city = { "서울", "부산", "대구", "인천", "광주", "대전", "울산"
+
+	};
+
+	public static void main(String[] args) {
+
+		Vector<String> v = new Vector<>();
+
+		for (String s : city) {
+			v.add(s);
+		}
+
+		// v.add(10); String으로 지정해놓아서 Integer는 들어갈 수 없다
+		
+		String str;
+		str = v.firstElement();
+		System.out.println(str);
+		
+		
+	}
+
+}
