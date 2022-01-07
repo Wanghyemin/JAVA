@@ -16,7 +16,7 @@ public class ScoreMain {
 
 			do {
 
-				System.out.print("1.입력 2. 출력 3.학번검색 4.이름검색 5.종료: ");
+				System.out.print("1.입력 2. 출력 3.학번검색 4.이름검색 5.총점정렬 6.학번정렬 7.학번삭제 8.종료: ");
 				ch = sc.nextInt();
 			} while (ch < 1);
 
@@ -33,6 +33,13 @@ public class ScoreMain {
 				break;
 			case 4:
 				ob.searchName();
+			case 5:
+				ob.descSortTot();
+				break;
+			case 6:
+				ob.ascSortHak();
+			case 7:
+				ob.deleteHak();
 			default:
 				System.exit(0);
 

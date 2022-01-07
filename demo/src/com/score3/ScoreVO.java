@@ -1,6 +1,6 @@
 package com.score3;
 
-public class ScoreVO { // Value Object : 데이터를 저장
+public class ScoreVO { // 데이터베이스 없을 때 저장해놓는 공간 VO // Value Object : 데이터를 저장
 
 	private String hak;
 	private String name;
@@ -51,20 +51,15 @@ public class ScoreVO { // Value Object : 데이터를 저장
 		this.mat = mat;
 	}
 
-	public int getTot() {
+	public int getTot() { // 외부에서 tot을 받을 필요가 없으므로 setTot X
 		return kor + eng + mat;
 	}
 
 	@Override
 	public String toString() {
-
-		if (hak == null || name == null) {
-			return null;
-
-		}
-		String str = String.format("%6s %6s %4d %4d %4d %4d %4d\n", 
-				hak, name, kor, eng, mat, getTot(),
-				getTot() / 3);
+		
+		String str = String.format("%6s %4d %4d %4d %4d %4d\n", 
+				name, kor, eng, mat, getTot(),getTot() / 3);
 
 		return str;
 	}

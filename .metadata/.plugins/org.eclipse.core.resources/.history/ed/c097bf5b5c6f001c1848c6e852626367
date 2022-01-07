@@ -1,0 +1,11 @@
+package com.score3;
+
+public interface Score {
+
+	public int input();
+	public void print();
+	public void searchHak(); // 학번 검색
+	public void searchName(); // 이름 검색
+	public void descSortTot(); // 학번 오름차순
+	public void ascSortTot(); //학번 내림차순
+}

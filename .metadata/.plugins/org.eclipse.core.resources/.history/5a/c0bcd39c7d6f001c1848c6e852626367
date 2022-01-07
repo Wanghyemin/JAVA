@@ -1,0 +1,27 @@
+package com.day13;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		// Set: 중복값을 허용하지 않는다
+		
+		Set<String> s = new HashSet<>();
+		
+		s.add("서울");
+		s.add("부산");
+		s.add("대구");
+		
+		System.out.println(s);
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.score4;
+
+public interface Score {
+
+	public void input();
+	public boolean searchHak(String hak);
+	public void print();	
+	
+}

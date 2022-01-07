@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.score1.Record1"/>
-<fullyQualifiedTypeName name="com.score1.Health"/>
-<fullyQualifiedTypeName name="com.day7.Circle"/>
-<fullyQualifiedTypeName name="com.day7.Data"/>
-<fullyQualifiedTypeName name="com.day7.Rect"/>
-<fullyQualifiedTypeName name="com.day7.Test5"/>
-<fullyQualifiedTypeName name="com.day7.RectA"/>
-<fullyQualifiedTypeName name="com.day6.SubClass"/>
-<fullyQualifiedTypeName name="com.day6.Demo"/>
-<fullyQualifiedTypeName name="com.day8.Test"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="com.day8.Rect"/>
-<fullyQualifiedTypeName name="com.rank.Score"/>
 <fullyQualifiedTypeName name="com.rank.Record"/>
 <fullyQualifiedTypeName name="com.day9.Circle"/>
 <fullyQualifiedTypeName name="com.day9.Rect"/>
@@ -48,16 +35,29 @@
 <fullyQualifiedTypeName name="com.study.Score"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="com.score3.ScoreMain"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.score3.Score"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.score3.ScoreImpl"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="com.score3.ScoreVO"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.ListIterator"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.score4.ScoreImpl"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.score4.ScoreVO"/>
 </qualifiedTypeNameHistroy>

@@ -59,10 +59,10 @@ public class Test7 {
 		} else {
 			System.out.println("검색 실패");
 		}
-		
+
 		// 오름차순
 		Collections.sort(v);
-		
+
 		for (String s : v) {
 			System.out.print(s + " ");
 		}
@@ -74,19 +74,19 @@ public class Test7 {
 			System.out.print(s + " ");
 		}
 		System.out.println();
-		
+
 		// 삭제
-		/*v.remove(7);*/  // 가능
+		/* v.remove(7); */ // 가능
 		v.remove("Pusan");
-		
+
 		for (String s : v) {
 			System.out.print(s + " ");
 		}
 		System.out.println();
-		
+
 		// 용량 증가
-		
-		for(int i=1;i<=20;i++) {
+
+		for (int i = 1; i <= 20; i++) {
 			v.add(Integer.toString(i));
 		}
 		for (String s : v) {
@@ -96,9 +96,9 @@ public class Test7 {
 
 		System.out.println("벡터의 용량: " + v.capacity()); // 40
 		System.out.println("데이터의 갯수: " + v.size()); // 27
-		
+
 		// 범위 삭제
-		for(int i=1;i<=10;i++) {
+		for (int i = 1; i <= 10; i++) {
 			v.remove(5);
 		}
 		for (String s : v) {
@@ -107,22 +107,22 @@ public class Test7 {
 		System.out.println();
 		System.out.println("벡터의 용량: " + v.capacity()); // 40 : 자동으로 줄어들지 않는다!
 		System.out.println("데이터의 갯수: " + v.size()); // 17
-		
+
 		// 미사용 공간 삭제
 		v.trimToSize();
-		System.out.println("벡터의 용량: " + v.capacity());
-		System.out.println("데이터의 갯수: " + v.size()); 
-		
+		System.out.println("벡터의 용량: " + v.capacity()); //17
+		System.out.println("데이터의 갯수: " + v.size()); //17
+
 		// 모든 데이터 삭제
 		v.clear();
 		System.out.println("벡터의 용량: " + v.capacity());
-		System.out.println("데이터의 갯수: " + v.size()); 
-		
+		System.out.println("데이터의 갯수: " + v.size());
+
 		// 미사용 공간 삭제
 		v.trimToSize();
-		System.out.println("벡터의 용량: " + v.capacity());
-		System.out.println("데이터의 갯수: " + v.size()); 
-		
+		System.out.println("벡터의 용량: " + v.capacity()); //0
+		System.out.println("데이터의 갯수: " + v.size()); //0
+
 	}
 
 }

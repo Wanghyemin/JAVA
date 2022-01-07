@@ -1,6 +1,8 @@
 package com.score3;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
@@ -20,8 +22,8 @@ public class ScoreImpl implements Score {
 
 		System.out.print("학번?"); // 111
 		vo.setHak(sc.next());
-		
-		System.out.print("이름?");// suzi
+
+		System.out.println("이름?");// suzi
 		vo.setName(sc.next());
 
 		System.out.print("국어?");
@@ -68,7 +70,7 @@ public class ScoreImpl implements Score {
 			if (vo.getHak().equals(hak)) {
 
 				System.out.println(vo.toString());
-				break;
+				break; // 같은 학번은 없으므로 하나의 값을 찾으면 break를 통해 끝남
 			}
 
 		}
@@ -78,7 +80,7 @@ public class ScoreImpl implements Score {
 	@Override
 	public void searchName() {
 
-		System.out.println("이름?");
+		System.out.print("이름?");
 		String name = sc.next();
 
 		Iterator<ScoreVO> it = lists.iterator();
@@ -90,10 +92,71 @@ public class ScoreImpl implements Score {
 			if (vo.getName().equals(name)) {
 
 				System.out.println(vo.toString());
-				break;
+
 			}
 		}
 
+	}
+
+	@Override
+	public void descSortTot() {
+
+		// 무명의 클래스
+		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
+
+			@Override
+			public int compare(ScoreVO vo1, ScoreVO vo2) {
+				return vo1.getTot() < vo2.getTot() ? 1 : -1; // 부등호 > 로 바꾸면 오름차순
+			}
+		};
+
+		Collections.sort(lists, comp);
+
+		print();
+
+	}
+
+	@Override
+	public void ascSortHak() {
+
+		// 무명의 클래스
+		Comparator<ScoreVO> comp = new Comparator<ScoreVO>() {
+
+			@Override
+			public int compare(ScoreVO vo1, ScoreVO vo2) {
+				return vo1.getHak().compareTo(vo2.getHak()); // 부등호 > 로 바꾸면 오름차순
+			}
+		};
+
+		Collections.sort(lists, comp);
+
+		print();
+
+	}
+
+	@Override
+	public void deleteHak() {
+		
+			System.out.println("삭제할 학번?");
+			String hak = sc.next();
+
+			Iterator<ScoreVO> it = lists.iterator();
+
+			while (it.hasNext()) {
+
+				ScoreVO vo = it.next();
+
+				if (vo.getHak().equals(hak)) {
+
+					lists.remove(vo);
+					print();
+					break; 
+					
+				}
+
+			}
+		
+		
 	}
 
 }

@@ -11,8 +11,13 @@ import java.util.Vector;
 
 // List, Vector, Set, Map, Hashtable, TreeSet, HashSet
 
-// List(I) - ArrayList(C) 동기화X , Vector(C) 동기화 O
-// Map(I) - Hashtable(C), HashSet(C)
+// 많이 쓰임
+// List(I) - ArrayList(C) 동기화X , Vector(C) 동기화 O  : Map보다 느림 
+// Map(I)  - Hashtable(C), HashSet(C)  :key값을 가지고 있어서 빠름
+
+
+
+// Vector
 
 public class Test5 {
 
@@ -24,7 +29,7 @@ public class Test5 {
 		v.add(30);
 		v.add('c');
 
-		String s = (String) v.get(0);
+		String s = (String) v.get(0);  // DOWNCAST
 		System.out.println(s);
 
 		Integer i = (Integer) v.get(1);

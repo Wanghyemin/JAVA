@@ -1,0 +1,40 @@
+package com.day13;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> lists = new ArrayList<>();
+		
+		lists.add("서울");
+		lists.add("부산");
+		lists.add("대구");
+		
+		Iterator<String> it = lists.iterator();
+		while(it.hasNext()) {
+			
+			String str = it.next();
+			System.out.print(str + " ");
+		}
+		System.out.println();
+		
+		
+		// ListIterator
+		ListIterator<String> it1 = lists.listIterator();
+		while(it.hasNext()) {
+			System.out.print(it.next()+	" ");
+		}
+		System.out.println("|n--------------------");
+		
+		while(it1.hasPrevious()) {
+			
+			System.out.print(it1.previous());
+		}
+		System.out.println();
+	}
+
+}

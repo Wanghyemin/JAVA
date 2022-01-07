@@ -39,29 +39,22 @@ public class Test6 {
 		}
 
 		System.out.println();
-		
-		// 확장for
+
+		// 확장 for
 		for (String s : v) {
 			System.out.print(s + " ");
 		}
 		System.out.println();
-		
-		//Iterator(반복자) : 데이터가 많으면 많을수록 확장 for문보다 Iterator 쓰기
+
+		// Iterator(반복자) : 데이터가 많으면 많을수록 확장 for문보다 Iterator 쓰기
+		// 한 번 데이터를 뽑아내면 그 다음엔 나오지 않는다
 		Iterator<String> it = v.iterator();
-		while(it.hasNext()) { // hasNext : 다음에 데이터가 있는지 확인하는 메소드
-			
+		while (it.hasNext()) { // hasNext : 다음에 데이터가 있는지 확인하는 메소드
+
 			str = it.next(); // next : read의 의미
 			System.out.print(str + " ");
-			
-			
-			
-			
-			
-		}
-		
-		
-		
-		
-	}
 
+		}
+
+	}
 }
