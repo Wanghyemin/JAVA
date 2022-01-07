@@ -23,6 +23,7 @@ public class Test4 {
 			y = sc.nextInt();
 		} while (y < 1);
 
+		
 		do {
 			System.out.print("월?");
 			m = sc.nextInt();
@@ -38,15 +39,16 @@ public class Test4 {
 			d = sc.nextInt();
 		} while (d < 1 || d > lastday);
 		d = now.get(Calendar.DATE);
-
+		
 		System.out.print("x일 후");
 		x = sc.nextInt();
 
+		
 		now.set(Calendar.YEAR, y);
 		now.set(Calendar.MONTH, m - 1);
-
+		
 		lastday = now.getActualMaximum(Calendar.DAY_OF_MONTH);
-
+		
 		do {
 			System.out.print("일?");
 			d = sc.nextInt();
@@ -54,6 +56,13 @@ public class Test4 {
 
 		System.out.print("x일 후");
 		x = sc.nextInt();
+
+
+
+
+		
+
+>>>>>>> 51cdd245362e24a02cb9e4ee62deb8ebd98073e5
 
 		System.out.println(lastday);
 
@@ -64,12 +73,12 @@ public class Test4 {
 		System.out.printf("만 난 날 : %d년 %d월 %d일 %s요일 ", y, m, d, str[w]);
 
 		now.add(Calendar.DAY_OF_MONTH, x);
-		/* now.set(y,m-1,d+x); */
+		/*now.set(y,m-1,d+x);*/
 
 		y = now.get(Calendar.YEAR);
-		m = now.get(Calendar.MONTH) + 1;
+		m = now.get(Calendar.MONTH)+1;
 		d = now.get(Calendar.DATE);
-		w = now.get(Calendar.DAY_OF_WEEK) - 1;
+		w = now.get(Calendar.DAY_OF_WEEK)-1;
 
 		System.out.println();
 		System.out.printf("%d일 후 : %d년 %d월 %d일 %s요일 ", x, y, m, d, str[w]);
