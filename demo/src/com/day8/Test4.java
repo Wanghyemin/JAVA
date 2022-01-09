@@ -17,11 +17,11 @@ class TestC {
 
 }
 
-class RectC extends TestC { //오버로딩된 생성자
-
+class RectC extends TestC { 
+	
 	private int w, h;
 	
-	public RectC(int w,int h) {
+	public RectC(int w,int h) { //오버로딩된 생성자
 		
 		super("사각형"); 
 		

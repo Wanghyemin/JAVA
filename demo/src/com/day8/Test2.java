@@ -29,7 +29,7 @@ class Rect extends TestA { // 상속
 	
 	private int w,h;
 	
-	public Rect(int w,int h){ // 생성자로 초기화 //
+	public Rect(int w,int h){ // 생성자로 초기화
 		this.w = w;
 		this.h = h;
 	}

@@ -16,18 +16,19 @@ public class Test7 {
 		str = str.replaceAll("\\s", "");
 
 		/*	
-		 * String[] oper = {"+","-","*","/"}; for(String op : oper) { 
-		 * int pos = str.indexOf(op); }
+		 * String[] oper = {"+","-","*","/"}; 
+		 * for(String op : oper) { 
+		 * int pos = str.indexOf(op); 
+		 * }
 		 */
 
 		for (String op : new String[] { "+", "-", "*", "/" }) {
+			
 			int pos = str.indexOf(op);
 
 			if (pos > -1) {
 				int num1 = Integer.parseInt(str.substring(0, pos));
 				int num2 = Integer.parseInt(str.substring(pos + 1));
-
-				/* System.out.println(num1+":"+num2); */
 
 				int result = 0;
 				char oper = str.charAt(pos);
