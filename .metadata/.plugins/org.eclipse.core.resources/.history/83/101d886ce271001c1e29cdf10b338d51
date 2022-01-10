@@ -1,0 +1,8 @@
+package com.naver;
+
+public interface Naver {
+
+	public int input();
+	public void print();
+	public void searchID();
+}

@@ -1,0 +1,29 @@
+package com.day14;
+
+class Box<T> {
+
+	private T t;
+
+	public void set(T t) {
+
+		this.t = t;
+	}
+
+	public T get() {
+		return t;
+	}
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+
+		Box<Integer> b1 = new Box<Integer>();
+		b1.set(10);
+		int i = b1.get();
+		System.out.println(i);
+		
+		
+	}
+
+}

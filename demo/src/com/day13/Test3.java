@@ -28,14 +28,14 @@ public class Test3 {
 
 		System.out.println("------------------");
 
-		// Stack
+		// Stack : 잘 안씀..
 		Stack<String> st = new Stack<>();
 
 		st.push("서울");
 		st.push("부산");
 		st.add("대구");
 
-		while (!st.empty()) {
+		while (!st.empty()) { //데이터가 비어있지 않을때까지 = 데이터가 있을때
 
 			System.out.println(st.pop()); // 들어간 것에 역순으로 나온다
 		}

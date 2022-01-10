@@ -38,8 +38,10 @@ public class ScoreMain {
 				break;
 			case 6:
 				ob.ascSortHak();
+				break;
 			case 7:
 				ob.deleteHak();
+				break;
 			default:
 				System.exit(0);
 

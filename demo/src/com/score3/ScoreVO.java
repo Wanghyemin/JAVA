@@ -20,6 +20,7 @@ public class ScoreVO { // 데이터베이스 없을 때 저장해놓는 공간 VO // Value Objec
 	}
 
 	public String getName() {
+		
 		return name;
 	}
 

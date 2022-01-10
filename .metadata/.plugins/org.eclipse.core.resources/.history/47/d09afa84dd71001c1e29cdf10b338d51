@@ -1,0 +1,67 @@
+package com.day14;
+
+import java.util.Scanner;
+
+import javax.xml.crypto.dsig.spec.ExcC14NParameterSpec;
+
+class MyAuthExcep {
+
+	public void inputFormat(String str) throws Exception {
+
+		// 문자 길이
+
+		if (str.length() < 5 || str.length() > 10) {
+			
+			throw new Exception("문자 길이 오류: " + str);
+		}
+
+		for (int i = 0; i < str.length(); i++) {
+
+			char ch = str.charAt(i);
+
+			if ((ch < 65 || ch > 90) && (ch < 97 || ch > 122)) {
+
+				throw new Exception("영문자 외의 값 기입: " + str);
+
+			}
+
+		}
+	}
+
+}
+
+public class Test4 {
+
+	public static void main(String[] args) {
+
+		// 5~10자 이내의 영문자을 입력받아 출력하는 프로그램
+		// 문자열: abcdefg
+		// abcefg
+
+		// 문자열: abc
+		// 문자열의 길이는 5~10자 입니다
+
+		// 문자열:ab12
+		// 영문자만 가능합니다
+
+		Scanner sc = new Scanner(System.in);
+
+		String str;
+
+		MyAuthExcep auth = new MyAuthExcep();
+
+		try {
+			System.out.println("문자열?");
+			str = sc.next();
+
+			auth.inputFormat(str);
+
+			System.out.println(str);
+
+		} catch (Exception e) {
+			System.out.println(e.toString());
+		}
+
+	}
+
+}

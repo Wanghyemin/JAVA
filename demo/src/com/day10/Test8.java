@@ -1,7 +1,5 @@
 package com.day10;
 
-import javax.security.auth.login.CredentialException;
-
 // 추상 클래스
 // 메모리의 낭비없이 클래스와 메소드를 미리 설계
 // 메소드를 재정의해서 사용

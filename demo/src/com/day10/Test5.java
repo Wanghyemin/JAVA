@@ -8,9 +8,7 @@ class Test {
 
 		System.out.println("Super Class write()...");
 		System.out.println("a: " + a + ", b: " + b);
-
 	}
-
 }
 
 class Demo extends Test {
@@ -43,21 +41,15 @@ public class Test5 {
 
 		Demo ob = new Demo();
 		ob.write();
-		ob.print1(); //10 30 40
-		ob.print2(); //10 20
-		
-		// System.out.println(super.b); 
-		System.out.println("ob.b: "+ ob.b);
-		System.out.println("((Test)ob).b: "+ ((Test)ob).b); //20
+		ob.print1(); // 10 30 40
+		ob.print2(); // 10 20
+
+		// System.out.println(super.b);
+		System.out.println("ob.b: " + ob.b);
+		System.out.println("((Test)ob).b: " + ((Test) ob).b); // 20
 		System.out.println("------------------------");
-		((Test)ob).write(); // 10 30 40 메소드는 부모의 탈을 썼어도 무조건 자식의 것을 찍어놓는다
-		
-		
-		
-		
-		
-		
-		
+		((Test) ob).write(); // 10 30 40 메소드는 부모의 탈을 썼어도 무조건 자식의 것을 찍어놓는다
+
 	}
 
 }

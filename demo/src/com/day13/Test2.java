@@ -5,14 +5,15 @@ import java.util.Iterator;
 
 // Map(I) - Hashtable(C), HashMap(C)
 // Hashtable : Vector와 동일 (동기화 ㅇ)
-// HashMap : ArrayList와 동일
+// HashMap : ArrayList와 동일 (동기화 x)
 
 // Map < key,value >
 // 키는 중복값을 가질 수 없다. (key: Set)
 // 키가 중복되면 마지막 값이 저장된다 (수정)
 // Map은 Iterator가 없다
 // put(키,값) : 추가
-// get(키,값) : 읽기
+// it.next : key를 읽음
+// get(키) : 데이터 읽기
 
 public class Test2 {
 	// key

@@ -11,11 +11,11 @@ public class Test1 {
 
 		ArrayList<String> lists = new ArrayList<>();
 		
-		lists.add("서울");
+		lists.add("서울"); // 입력
 		lists.add("부산");
 		lists.add("대구");
 		
-		Iterator<String> it = lists.iterator();
+		Iterator<String> it = lists.iterator(); // 데이터 꺼내기 while
 		while(it.hasNext()) {
 			
 			String str = it.next();

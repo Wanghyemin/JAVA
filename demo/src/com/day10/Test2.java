@@ -46,7 +46,7 @@ public class Test2 {
 		System.out.printf("%tF %tT\n", now, now); // 2022-01-04 11:48:17
 		System.out.printf("%1$tF %1$tT\n", now); // 2022-01-04 11:48:17
 		
-		now.set(2021,9-1,10); // m = 9가 10월을 의미
+		now.set(2021,10-1,10); // m = 9가 10월을 의미
 		
 		y = now.get(Calendar.YEAR);// 년
 		m = now.get(Calendar.MONTH) + 1;// 월(0~11)
