@@ -1,0 +1,42 @@
+package com.day15;
+
+import java.util.Calendar;
+
+class MyThread implements Runnable{
+
+	@Override
+	public void run() {
+		
+		Calendar cr = Calendar.getInstance();	
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		// 현재 시스템의 날짜와 시간을 1초마다 출력하시오
+		
+		MyThread t1 = new MyThread();
+		
+		t1.start();
+		
+		System.out.println("main");
+		
+		
+		
+	}
+
+}

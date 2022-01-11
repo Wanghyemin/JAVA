@@ -1,0 +1,21 @@
+package com.day16;
+
+import java.io.IOException;
+
+// InputStreamReader
+// 1byte Stream을 2byte Stream으로 변화해주는 Stream
+
+// OuterStreamReader
+
+public class Test3 {
+
+	public static void main(String[] args) throws IOException {
+
+		int data;
+		System.out.println("문자열?");
+		
+		
+		
+	}
+
+}

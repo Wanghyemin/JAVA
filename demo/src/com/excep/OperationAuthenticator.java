@@ -5,6 +5,7 @@ public class OperationAuthenticator {
 	public void inputFormat(String str) throws MyException {
 
 		String temp[] = str.split(",");
+		
 		if (temp.length != 2) {
 
 			throw new MyException("숫자 입력 오류: " + str); // 생성자 오버로딩

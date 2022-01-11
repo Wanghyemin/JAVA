@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
-<fullyQualifiedTypeName name="com.day11.TestA"/>
-<fullyQualifiedTypeName name="com.day11.TestB"/>
-<fullyQualifiedTypeName name="com.day11.SuperTest"/>
-<fullyQualifiedTypeName name="com.day11.subTest"/>
-<fullyQualifiedTypeName name="com.day11.FruitImpl"/>
-<fullyQualifiedTypeName name="com.day11.TestImpl"/>
-<fullyQualifiedTypeName name="com.day11.Test5"/>
-<fullyQualifiedTypeName name="com.day11.Apple"/>
-<fullyQualifiedTypeName name="com.score2.Record"/>
-<fullyQualifiedTypeName name="com.score2.ScoreImpl"/>
-<fullyQualifiedTypeName name="com.day12.Outer1.Inner1"/>
-<fullyQualifiedTypeName name="com.day12.Outer2"/>
-<fullyQualifiedTypeName name="com.day12.Test4"/>
-<fullyQualifiedTypeName name="com.study.Score"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.net.SocketTimeoutException"/>
-<fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="com.score3.ScoreMain"/>
 <fullyQualifiedTypeName name="com.score3.Score"/>
 <fullyQualifiedTypeName name="com.score3.ScoreImpl"/>
@@ -40,12 +22,10 @@
 <fullyQualifiedTypeName name="com.day9.Calc"/>
 <fullyQualifiedTypeName name="com.day14.Box"/>
 <fullyQualifiedTypeName name="java.nio.Buffer"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="com.excep.MyException"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="javax.swing.InputMap"/>
-<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="com.excep.OperationAuthenticator"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="javax.xml.crypto.dsig.spec.ExcC14NParameterSpec"/>
@@ -55,9 +35,29 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="com.score4.ScoreVO"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.naver.Naver"/>
 <fullyQualifiedTypeName name="com.naver.NaverImpl"/>
 <fullyQualifiedTypeName name="java.security.GeneralSecurityException"/>
+<fullyQualifiedTypeName name="com.day15.MyThread1"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.day15.MyThread"/>
+<fullyQualifiedTypeName name="com.day15.MyThread5"/>
+<fullyQualifiedTypeName name="com.day15.MyThread6"/>
+<fullyQualifiedTypeName name="com.day15.MyThread7"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="com.day15.MyThread8"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.day15.Test9"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.Reader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+<fullyQualifiedTypeName name="java.io.Writer"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.day15.ClassRandom"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// 예외를 의도적으로 발생시키는 방법
+// 예외를 의도적으로 발생시키는 방법 : Test2보다 더 많이 사용
 
 public class Test3 {
 

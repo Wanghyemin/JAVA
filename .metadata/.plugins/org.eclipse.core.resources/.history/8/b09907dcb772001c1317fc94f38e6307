@@ -1,0 +1,58 @@
+package com.day15;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ClassRandom {
+
+	private static String[] name = { "Àü»ó¿ø", "¹Ú  ¹ü", "±èÂùÁÖ", "ÁøÇöÁÖ", "³²½ÂÀº", "¹Ú°¡À±", "¼­µ¿Çõ", "¾ç¼¼¸®", "±èÃ¢ÈÆ", "ÀÌÁÖÇö", "¿ÕÇý¹Î",
+			"ÀÌÁ¾¿ø", "ÀåÇÏÀº", "±è¼ºÁ¦", "Ã¤Çö¿ì", "ÀÌÀ±Àç", "Àü¼º´ö", "ÀÌ³ª¿µ", "¹è½ÂÈ¯", "ÀÌÇÑ¼Ö" };
+
+	private static int[] a;
+
+	public void ClassRandom(String[] name) {
+		this.name = name;
+	}
+
+	public void input() {
+
+		Random rd = new Random();
+		Scanner sc = new Scanner(System.in);
+
+		int i, j, inwon, n;
+		do {
+			System.out.println("¹ßÇ¥ÀÚ ÀÎ¿ø¼ö?");
+
+			inwon = sc.nextInt();
+
+			a = new int[inwon];
+		} while (inwon > 20 || inwon < 1);
+		i = 0;
+		while (i < inwon) {
+			a[i] = rd.nextInt(20) + 1;
+			for (j = 0; j < i; j++) {
+				if (a[i] == a[j]) {
+					i--;
+					break;
+				}
+			}
+			i++;
+		}
+
+	}
+
+	public void print() {
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.printf("%d¹ø ¹ßÇ¥ÀÚ : %4s \n", (i+1), name[a[i]]);
+		}
+	}
+
+	public static void main(String[] args) {
+
+		ClassRandom cr = new ClassRandom();
+		cr.input();
+		cr.print();
+
+	}
+}
