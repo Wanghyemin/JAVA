@@ -19,9 +19,12 @@ public class Test2 {
 		b[2] = 122;
 		
 		os.write(b);
+		
+		System.out.println("나 보이냐?1");
+		
 		os.close(); // 마무리 
 		
-		System.out.println("나 보이냐?"); //out 이 outputStream가 닫혀서 출력이 되지 않음
+		System.out.println("나 보이냐?2"); //out 이 outputStream가 닫혀서 출력이 되지 않음
 
 	}
 

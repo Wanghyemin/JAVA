@@ -1,0 +1,25 @@
+package com.day16;
+
+import java.io.File;
+
+public class Test13 {
+
+	public static void main(String[] args) {
+
+		String str = "d:\\doc\\temp\\java1\\itwill.txt";
+		
+		// ¹æ¹ý1
+		String path = str.substring(0,str.lastIndexOf("\\"));
+	
+		File f  = new File(path);
+		if(!f.exists()) {
+			f.mkdirs();
+			
+		}
+		
+		
+		
+		
+	}
+
+}

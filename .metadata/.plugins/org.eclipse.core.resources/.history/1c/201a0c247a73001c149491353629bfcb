@@ -1,0 +1,21 @@
+package com.score5;
+
+public class ScoreVO {
+
+	private String name;
+	private int birth;
+	private int score;
+
+	public ScoreVO(String name, int birth, int score) {
+		this.name = name;
+		this.birth = birth;
+		this.score = score;
+
+	}
+
+	@Override
+	public String toString() {
+		return name + "	" + birth + "	" + score;
+	}
+
+}

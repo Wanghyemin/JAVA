@@ -26,12 +26,12 @@ public class ClassRandom extends Thread {
 			inwon = sc.nextInt();
 
 			a = new int[inwon];
-		} while (inwon > 20 || inwon < 1);
+		} while (inwon > name.length || inwon < 1);
 		
 		
 		i = 0;
 		while (i < inwon) {
-			a[i] = rd.nextInt(20) + 1;
+			a[i] = rd.nextInt(20);
 			for (j = 0; j < i; j++) {
 				if (a[i] == a[j]) {
 					i--;

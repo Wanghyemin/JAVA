@@ -1,0 +1,37 @@
+package com.day16;
+
+import java.io.FileOutputStream;
+
+// FileOutputStream
+
+
+public class Test6 {
+
+	public static void main(String[] args) {
+
+		
+		try {
+			
+			FileOutputStream fos = new FileOutputStream("d:\\doc\\out1.txt");
+			
+			int data;
+			System.out.print("¹®ÀÚ¿­: "); // abcd
+			
+			while((data = System.in.read())!=-1) {
+				
+				fos.write(data);
+				fos.flush();
+				
+			}
+			
+			fos.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+		
+	}
+
+}

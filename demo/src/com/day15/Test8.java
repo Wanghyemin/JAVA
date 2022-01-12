@@ -23,8 +23,7 @@ class MyThread8 implements Runnable {
 
 		try {
 
-			synchronized (this) { // 동기화 블럭
-
+			synchronized (this) { // 동기화 블럭 : t1 t2가 연속적으로 실행되지 않도록 잠시 중지 this 생략해도 된다
 				if (getBank() >= moneyNeed) {
 					money = drawMoney(moneyNeed);
 					msg = "인출 성공";

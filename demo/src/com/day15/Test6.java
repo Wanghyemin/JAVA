@@ -62,7 +62,7 @@ public class Test6 {
 			Thread.sleep(1000);
 			System.out.println("1초 sleep후 t2 살아있냐?" + t2.isAlive()); // false
 
-			t2.join();
+			t2.join();// t2가 종료할때까지 기다려
 
 			System.out.println("그래도 살아있냐? " + t2.isAlive()); // false : 이미 끝남
 
