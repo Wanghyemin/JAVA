@@ -65,8 +65,9 @@ public class Score {
 		Iterator<ScoreVO> it = lists.iterator();
 		
 		while(it.hasNext()) {
-			vo = it.next();
-			break;
+			/*vo = it.next();*/
+			System.out.println(vo.toString());
+			break; 
 		}
 		ois.close();
 		fis.close();

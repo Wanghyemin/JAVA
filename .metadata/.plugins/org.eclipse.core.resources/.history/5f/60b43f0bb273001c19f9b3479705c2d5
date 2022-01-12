@@ -66,7 +66,8 @@ public class Score {
 		
 		while(it.hasNext()) {
 			vo = it.next();
-			break;
+			/*System.out.println(vo.toString());*/
+			break; 
 		}
 		ois.close();
 		fis.close();

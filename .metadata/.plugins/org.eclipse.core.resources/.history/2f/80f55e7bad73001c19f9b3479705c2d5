@@ -18,6 +18,8 @@ public class Score {
 
 	public void input() throws Exception {
 
+
+		
 		System.out.println("¿Ã∏ß?");
 		vo.setName(sc.next());
 		
@@ -66,7 +68,7 @@ public class Score {
 		
 		while(it.hasNext()) {
 			vo = it.next();
-			break;
+
 		}
 		ois.close();
 		fis.close();
