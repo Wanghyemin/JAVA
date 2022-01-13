@@ -1,0 +1,33 @@
+package com.day17;
+
+import java.awt.Frame;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Test6 extends Frame {
+
+	private static final long serialVersionUID = 1L;
+
+	private int x,y;
+	
+	public Test6(){
+		
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		setTitle("ÁÂÇ¥Ãâ·Â");
+		setSize(400, 400);
+		setVisible(true);
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		new Test6();
+	}
+
+}

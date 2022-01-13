@@ -4,6 +4,9 @@ import java.io.Serializable;
 
 public class ScoreVO implements Serializable{
 
+
+	private static final long serialVersionUID = 1L;
+	
 	private String name;
 	private int birth;
 	private int score;
@@ -33,8 +36,10 @@ public class ScoreVO implements Serializable{
 	}
 
 	@Override
-	public String toString() {
-		return name + "	" + birth + "	" + score +"\n"; 
+	public String toString() { // Ãâ·Â±â
+		/*return name + "	" + birth + "	" + score +"\n"; */
+		return String.format("%6s %6s %4d",name, birth,score);
+		
 	}
 
 }

@@ -1,0 +1,44 @@
+package com.day17;
+
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.TextArea;
+import java.awt.TextField;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Test4 extends Frame {
+
+	private static final long serialVersionUID = 1L;
+
+	private Button btn;
+	private TextArea ta;
+	private TextField tf;
+
+	public Test4() {
+
+		tf = new TextField();
+		ta = new TextArea();
+		btn = new Button("추가");
+
+		setTitle("윈도우");
+		setSize(300, 300);
+
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		setVisible(true);
+
+	}
+
+	public static void main(String[] args) {
+
+		new Test4();
+		
+	}
+
+}
