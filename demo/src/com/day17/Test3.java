@@ -14,7 +14,7 @@ public class Test3 extends Frame {
 
 		// addWindowListener(new MyWindowAdapter()); //
 
-		addWindowListener(new WindowAdapter() {
+		addWindowListener(new WindowAdapter() { // 무명의 클래스
 			@Override
 			public void windowClosing(WindowEvent e) {
 				System.exit(0);

@@ -48,7 +48,7 @@ public class Test6 extends Frame {
 	}
 
 	@Override
-	public void update(Graphics g) {
+	public void update(Graphics g) { // repaint()∞° update()»£√‚!!
 		paint(g);
 	}
 
