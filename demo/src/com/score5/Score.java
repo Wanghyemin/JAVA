@@ -1,6 +1,7 @@
 package com.score5;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -12,19 +13,27 @@ import com.score5.ScoreVO;
 
 public class Score {
 
-	List<ScoreVO> lists = new ArrayList<>();
-	Scanner sc = new Scanner(System.in);
-	ScoreVO vo = new ScoreVO();
+	private List<ScoreVO> lists;
+	
+	private String path = System.getProperty("user.dir");
+	private File f = new File (path,"\\data\\score.txt"); // 없어도 된다
+	
+	
+
+	
 
 	public void input() throws Exception {
 
-		System.out.println("이름?");
+		Scanner sc = new Scanner(System.in);
+		ScoreVO vo = new ScoreVO();
+		
+		System.out.print("이름?");
 		vo.setName(sc.next());
 		
-		System.out.println("생일?");
+		System.out.print("생일?");
 		vo.setBirth(sc.nextInt());
 		
-		System.out.println("점수?");
+		System.out.print("점수?");
 		vo.setScore(sc.nextInt());
 		
 		lists.add(vo);
@@ -62,12 +71,12 @@ public class Score {
 		
 		List<ScoreVO> lists = (List<ScoreVO>)ois.readObject();
 		
-		Iterator<ScoreVO> it = lists.iterator();
+		/*Iterator<ScoreVO> it = lists.iterator();
 		
 		while(it.hasNext()) {
 			vo = it.next();
-			break;
-		}
+
+		}*/
 		ois.close();
 		fis.close();
 		
