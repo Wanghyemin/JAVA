@@ -6,8 +6,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import com.sun.imageio.plugins.common.InputStreamAdapter;
-
 public class Test2 {
 
 	public static void main(String[] args) throws Exception {
@@ -17,7 +15,7 @@ public class Test2 {
 		System.out.println("클래스명[java.lang.String]?");
 		String str = br.readLine();
 
-		Class cls = Class.forName(str); //*중요함*//
+		Class cls = Class.forName(str); //*중요함*// // 패키지의 이름
 
 		// 생성자 정보
 		System.out.println("생성자 정보...");

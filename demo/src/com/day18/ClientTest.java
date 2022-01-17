@@ -23,7 +23,7 @@ public class ClientTest extends Frame implements ActionListener, Runnable {
 	private TextArea ta = new TextArea();
 	private TextField tf = new TextField();
 	private Socket sc = null;
-	private String host = "192.168.16.0"; //127.0.0.1 //localhost
+	private String host = "192.168.16.15"; //127.0.0.1 //localhost
 	private int port = 7777;
 	
 	public ClientTest() {
