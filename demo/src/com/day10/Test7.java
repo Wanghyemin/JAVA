@@ -22,7 +22,8 @@ class TestA {
 
 public class Test7 extends TestA {
 
-/*	@Override //final 쓰면 가져다 쓰는건 가능하지만 Overriding은 불가능하다.
+/*	@Override 
+ * final 쓰면 가져다 쓰는건 가능하지만 Overriding은 불가능하다.
 	public void write(String title) {
 		
 	}*/ 

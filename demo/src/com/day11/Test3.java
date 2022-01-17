@@ -1,7 +1,7 @@
 package com.day11;
 
 // Interface
-// 추상클래스의 일종으로 선안만 하고 정의(내용=코딩)가 없다.
+// 추상클래스의 일종으로 선언만 하고 정의(내용=코딩)가 없다.
 // 변수는 final 변수만 선언 가능하다
 // 인터페이스를 구현하기 위해서는 implements를 사용
 // 인터페이스를 구현했으면 인터페이스의 모든 메소드를 재정의(Override) 해야한다.
@@ -16,7 +16,7 @@ interface Fruit {
 
 	public String getName();
 
-	// public void print() {
+	// public void print(){
 
 	// } 일반 메소드는 못만든당..
 

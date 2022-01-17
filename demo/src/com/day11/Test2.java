@@ -35,7 +35,7 @@ public class Test2 {
 	public static void main(String[] args) {
 
 		SubTest ob1 = new SubTest();
-		System.out.println(ob1.b); // 200
+		System.out.println(ob1.b); // 100
 
 		SuperTest ob2 = ob1; // UPCAST
 		System.out.println(ob2.b); // 20
@@ -46,6 +46,7 @@ public class Test2 {
 
 		// ob2.print(); //4.³»²¨´Â ³»²¨´Ù
 
+		((SuperTest) ob1).write();
 		((SubTest) ob2).print(); // DOWNCAST
 	}
 

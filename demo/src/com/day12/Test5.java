@@ -23,7 +23,7 @@ public class Test5 {
 
 	public static void main(String[] args) {
 
-		Vector v = new Vector<>(); // 기본 데이터 type이 Object 이다
+		Vector v = new Vector<>(); // 기본 데이터 type이 Object 다
 
 		v.add("서울"); // UPCAST
 		v.add(30);

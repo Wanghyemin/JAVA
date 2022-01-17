@@ -19,9 +19,9 @@ public class Test1 {
 		TestA a = new TestA();
 		TestB b;
 		
-		//b = a; // 자료형이 달라서 불가능
+		//b = a; // 자료형이 달라서 불가능 (암시적)
 		
-		//b = (TestB)a;
+		//b = (TestB)a; // 명시적 형변환 (X)
 		
 		
 	
