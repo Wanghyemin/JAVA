@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>book XML 파싱</title>
+<script type="text/javascript">
+	var xmlDoc = new ActiveXObject("Msxml2.DOMDocument");
+	xmlDoc.load("book.xml");
+	
+	function printNodeItem(){
+		
+		// var root= xmlDoc.getElementsByTagName("booklist")[0];
+		var root = xmlDoc.documentElement;
+		
+		var books = root.getElementsByTagName("book");
+		
+		var out = "";
+		
+		for(var i=0;i<books.length;i++){
+			
+			out += "\n분류: " + books[i].getAttribute("kind")
+				+ ", 제목: " + books[i].getElementsByTagName("kind")[0].firstChild.nodeValue
+				+ ", 저장: " + books[i].getElementsByTagName("author")[0].firstChild.nodeValue
+				+ ", 가격: " + books[i].getElementsByTagName("price")[0].firstChild.nodeValue;
+		}
+		alert(out);	
+	}
+	
+</script>
+
+
+
+</head>
+<body>
+
+<input type = "button" value = "노드출력" onclick="printNodeItem();"/>
+
+
+
+</body>
+</html>

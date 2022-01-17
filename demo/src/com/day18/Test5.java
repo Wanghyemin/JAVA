@@ -14,7 +14,6 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-import com.sun.imageio.plugins.common.InputStreamAdapter;
 
 public class Test5 extends Frame implements ActionListener {
 

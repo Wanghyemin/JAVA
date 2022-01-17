@@ -1,9 +1,0 @@
-package com.excep;
-
-public class CalcExcep {
-
-	public static void main(String[] args) {
-
-	}
-
-}

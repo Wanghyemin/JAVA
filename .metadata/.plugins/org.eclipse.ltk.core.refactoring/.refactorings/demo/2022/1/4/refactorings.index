@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 1642323033027	Copy compilation units
 1642323045476	Rename type 'ScoreVO'
 1642323063451	Rename type 'ScoreMain'
 1642323072720	Rename type 'ScoreImpl'
 1642323084677	Delete element
 1642323577518	Delete element
+=======
+1642395629332	Rename type 'Fileinfo'
+1642395878701	Rename package 'com.day19'
+1642396339634	Rename package 'com.day20'
+1642399008700	Move 'city.xml' to 'demo'
+1642400021115	Move file
+1642404468937	Copy files
+>>>>>>> 4a48fd934ddbe686e42e7bbc5413929df7193cbf
