@@ -1,0 +1,72 @@
+package com.project;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class ProjectAPI {
+
+	public static void main(String[] args) {
+
+		try {
+
+			DocumentBuilderFactory f = DocumentBuilderFactory.newInstance();
+			DocumentBuilder parser = f.newDocumentBuilder();
+
+			Document xmlDoc = null;
+
+			String url = "https://nip.kdca.go.kr/irgd/cov19stats.do?list=all";
+
+			xmlDoc = parser.parse(url);
+			// System.out.println(url);
+
+			Element root = xmlDoc.getDocumentElement();
+//			System.out.println(root); // response : null
+
+			Node body = root.getChildNodes().item(1);
+//			System.out.print(body);
+
+			Node items = body.getChildNodes().item(3);
+//			System.out.print(items);
+
+//			Node item1 = items.getChildNodes().item(1);
+//			Node item2 = items.getChildNodes().item(3);
+			Node item3 = items.getChildNodes().item(5);
+//			System.out.println(item1);
+//			System.out.println(item2);
+//			System.out.println(item3);
+			
+			NodeList itemList = item3.getChildNodes();
+
+			Node a1 = itemList.item(3);
+			Node b1 = itemList.item(5);
+			Node c1 = itemList.item(7);
+			
+			String a = null;
+			String b = null;
+			String c = null;
+
+			a = a1.getChildNodes().item(0).getNodeValue();
+			b = b1.getChildNodes().item(0).getNodeValue();
+			c = c1.getChildNodes().item(0).getNodeValue();
+			//1차
+			System.out.print("1차백신: " + a + "명 ");
+			System.out.printf("%.3g(%s)\n",Double.parseDouble(a)/51420000*100,"%");
+			//2차
+			System.out.print("2차백신: " + b + "명 ");
+			System.out.printf("%.3g(%s)\n",Double.parseDouble(b)/51416000*100,"%");
+			//3차
+			System.out.print("3차백신: " + c + "명 ");
+			System.out.printf("%.3g(%s)\n",Double.parseDouble(c)/51420000*100,"%");
+
+		} catch (Exception e) {
+			System.out.println(e.toString());
+		}
+
+	}
+
+}
