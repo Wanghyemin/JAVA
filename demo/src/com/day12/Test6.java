@@ -5,9 +5,8 @@ import java.util.Vector;
 
 public class Test6 {
 
-	private static final String[] city = { "서울", "부산", "대구", "인천", "광주", "대전", "울산"
-
-	};
+	private static final String[] city = { "서울", "부산", "대구",
+			"인천", "광주", "대전", "울산"};
 
 	public static void main(String[] args) {
 

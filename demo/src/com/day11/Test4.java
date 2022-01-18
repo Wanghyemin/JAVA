@@ -86,6 +86,7 @@ public class Test4 {
 
 		ob1.write();
 		ob2.write();
+		// ob1.set();
 	}
 
 }
