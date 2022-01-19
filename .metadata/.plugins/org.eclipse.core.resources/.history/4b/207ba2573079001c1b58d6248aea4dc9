@@ -28,11 +28,11 @@ public class ThreadSrt extends Thread {
 
 			String str = print.substring(i, i + 1);
 
-			if (str.equals("бс")) 
+			if (str.equals("бс")) {
 				str = "бр";
-			 else if (str.equals("бр")) 
+			} else if (str.equals("бр")) {
 				str = "бс";
-			
+			}
 			xprint += str;
 		}
 
@@ -74,30 +74,30 @@ public class ThreadSrt extends Thread {
 				, "бс                            @@@@@@@@@@@@@@@@@@@@@@@@@$.                             бс\r\n"
 				, "бс                             ..~@@@@@@@@@@@@@@@@@@,.                                бс\r\n"
 				, "бс                                  ---~!!!!!!---,                                    бс\r\n"};
-		try {
-
-			for (int i = 0; i < srt.length; i++) {
+			try {
 				
+		
+			for(int i=0;i<srt.length;i++) {
 				System.out.print(srt[i]);
 				sleep(30);
+			}	} catch (Exception e) {
+				// TODO: handle exception
 			}
-		} catch (Exception e) {
-			System.out.println(e.toString());
-		}
 	}
 
 	@Override
 	public void run() {
 
-		try { 
+		try {
 			sleep(500);
 			string();
-
+			
 			sleep(1300);
 			mask();
-
+			
 			sleep(1000);
 			xstring();
+			
 
 		} catch (Exception e) {
 			System.out.println(e.toString());

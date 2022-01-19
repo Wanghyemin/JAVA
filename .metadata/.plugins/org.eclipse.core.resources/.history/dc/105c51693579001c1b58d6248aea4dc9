@@ -77,18 +77,16 @@ public class Covid {
 				Node items = body.getFirstChild();
 				Node item = items.getFirstChild();
 				NodeList itemList = item.getChildNodes();
-				
+				System.out.println("@@@@@스레드주석풀기@@@@@");
 				Node a1 = itemList.item(3);
 				Node b1 = itemList.item(2);
-				
-				
-				System.out.println("@@@@@스레드주석풀기@@@@@");
+
 				// 노드에 있는 값 Double로 받아오기
 				decide[i] = Double.parseDouble(a1.getChildNodes().item(0).getNodeValue()); // 확진자
 				death[i] = Double.parseDouble(b1.getChildNodes().item(0).getNodeValue());  // 사망자
-				
+
 			}
-			
+			System.out.println("+++++++");
 			// 3자리 수 마다 콤마찍기 (111,111)
 			str1 = numberFormat.format(decide[1]);
 			str2 = numberFormat.format(death[1]);

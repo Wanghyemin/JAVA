@@ -59,7 +59,7 @@ public class Covid {
 			//// URL 데이터 읽기 ////
 			//  배열 day = {  당일 ,  익일   };
 			String[] day = { today, tomorrow };
-			
+
 			for (int i = 0; i < day.length; i++) {
 				
 				String url = "http://openapi.data.go.kr/openapi/service/rest/Covid19"
@@ -67,7 +67,7 @@ public class Covid {
 						+ "H3h3AiFSpZrWZMfmjJGXFVZNGhf2BGW25igritgTfMcgMe4Gxd8qbS9nb%"
 						+ "2F6%2BwBycXw%3D%3D&pageNo=1&numOfRows=10&" 
 						+ "startCreateDt=" + day[i] + "&endCreateDt="+ day[i];
-				
+
 				Document xmlDoc = null;
 				xmlDoc = parser.parse(url);
 
@@ -77,18 +77,16 @@ public class Covid {
 				Node items = body.getFirstChild();
 				Node item = items.getFirstChild();
 				NodeList itemList = item.getChildNodes();
-				
+
 				Node a1 = itemList.item(3);
 				Node b1 = itemList.item(2);
-				
-				
-				System.out.println("@@@@@스레드주석풀기@@@@@");
+
 				// 노드에 있는 값 Double로 받아오기
 				decide[i] = Double.parseDouble(a1.getChildNodes().item(0).getNodeValue()); // 확진자
 				death[i] = Double.parseDouble(b1.getChildNodes().item(0).getNodeValue());  // 사망자
-				
+
 			}
-			
+
 			// 3자리 수 마다 콤마찍기 (111,111)
 			str1 = numberFormat.format(decide[1]);
 			str2 = numberFormat.format(death[1]);
@@ -108,7 +106,7 @@ public class Covid {
 		// 날짜 값이 없다면 출력 금지
 		if (str1 == "" || str2 == "") 
 			return;
-		
+		System.out.println("+++++++");
 		// 캘린더 날짜 포맷 변경 [20220101 → 2022년 01월 01일]
 		SimpleDateFormat formout = new SimpleDateFormat("yyyy년 MM월 dd일");
 		String today = formout.format(calendar.getTime());
