@@ -19,7 +19,7 @@ public class Main extends Thread {
 		
 		// Threadsrt 실행 2초 뒤 Main 출력
 		start.start();
-		sleep(5000); // Main절 2초 대기
+		sleep(2400); // Main절 2초 대기
 
 		
 		// 키 입력하면 프로그램 실행
@@ -64,13 +64,11 @@ public class Main extends Thread {
 				break;
 
 			default: // 4. 종료
-			
-				end.start();
-				sleep(3500);
-				System.out.println("\n\n=============================" 
+				System.out.println("=============================" 
 						+ "  프로그램이 종료되었습니다  " 
 						+ "==============================\n\n");
-				
+				end.start();
+				sleep(2400);
 				System.exit(0);
 				
 			}
