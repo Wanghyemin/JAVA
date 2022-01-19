@@ -1,0 +1,23 @@
+package com.project;
+
+public class ThreadEnd extends Thread {
+	
+	@Override
+	public void run() {
+		int i = 0;
+		while (true) {
+			if (i % 2 == 0)
+			
+
+			i++;
+
+			try {
+				sleep(1500);
+			} catch (Exception e) {
+
+			}
+
+		}
+	}
+
+}
