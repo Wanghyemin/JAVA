@@ -78,7 +78,6 @@ public class Covid {
 				Node item = items.getFirstChild();
 				NodeList itemList = item.getChildNodes();
 
-				// 노드에서 확진자, 사망자 이름 찾기
 				for (int j = 0; j < itemList.getLength(); j++) {
 
 					Node aa = itemList.item(j);

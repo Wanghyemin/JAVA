@@ -78,24 +78,13 @@ public class Covid {
 				Node item = items.getFirstChild();
 				NodeList itemList = item.getChildNodes();
 
-				// 노드에서 확진자, 사망자 이름 찾기
-				for (int j = 0; j < itemList.getLength(); j++) {
+				Node a1 = itemList.item(3);
+				Node b1 = itemList.item(2);
 
-					Node aa = itemList.item(j);
-					String k = aa.getNodeName();
-
-					
-					// 노드에서 확진자 사망자 값 불러오기
-					if (k.equals("decideCnt")) {
-
-						decide[i] = Double.parseDouble(aa.getChildNodes().item(0).getNodeValue());
-
-					} else if (k.equals("deathCnt")) {
-						
-						death[i] = Double.parseDouble(aa.getChildNodes().item(0).getNodeValue());
-						
-					}
-				}
+				System.out.println("@@@@@스레드주석풀기@@@@@");
+				// 노드에 있는 값 Double로 받아오기
+				decide[i] = Double.parseDouble(a1.getChildNodes().item(0).getNodeValue().trim()); // 확진자
+				death[i] = Double.parseDouble(b1.getChildNodes().item(0).getNodeValue().trim()); // 사망자
 			}
 
 			// 3자리 수 마다 콤마찍기 (111,111)

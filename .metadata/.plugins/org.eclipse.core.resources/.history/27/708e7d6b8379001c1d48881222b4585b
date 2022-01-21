@@ -17,10 +17,10 @@ public class Main extends Thread {
 		int num;
 		
 		
-		// Threadsrt 실행 5초 뒤 Main 출력
+		// Threadsrt 실행 2초 뒤 Main 출력
 		start.start();
-		sleep(5000);
-		
+		sleep(5000); // Main절 2초 대기
+
 		
 		// 키 입력하면 프로그램 실행
 		System.out.println("\n\n===========================" 
