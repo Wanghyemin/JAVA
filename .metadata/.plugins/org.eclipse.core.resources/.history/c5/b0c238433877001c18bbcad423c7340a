@@ -1,9 +1,0 @@
-package com.day18;
-
-public class ChatCS {
-
-	public static void main(String[] args) {
-
-	}
-
-}
