@@ -70,17 +70,16 @@ public class ThreadEnd extends Thread {
 				, "бс                            #@-.                   .$@#=                            бс\r\n"
 				, "бс                                ;*#@@@$*;::!=@@@@$*-                                бс\r\n"
 				, "бс                                     .:!!!!!!!!~                                    бс\r\n"};
-
+			
 		try {
-
-			for (int i = 0; i < end.length; i++) {
-				
+			
+			
+			for(int i=0;i<end.length;i++) {
 				System.out.print(end[i]);
 				sleep(30);
+			}	} catch (Exception e) {
+				// TODO: handle exception
 			}
-		} catch (Exception e) {
-			System.out.println(e.toString());
-		}
 	}
 
 	@Override
@@ -96,6 +95,7 @@ public class ThreadEnd extends Thread {
 			sleep(300);
 			xstring();
 			
+
 		} catch (Exception e) {
 			System.out.println(e.toString());
 		}

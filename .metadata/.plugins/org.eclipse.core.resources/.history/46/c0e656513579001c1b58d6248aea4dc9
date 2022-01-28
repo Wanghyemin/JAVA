@@ -18,13 +18,8 @@ public class Main extends Thread {
 		
 		
 		// Threadsrt 실행 5초 뒤 Main 출력
-<<<<<<< HEAD
 		start.start();
 		sleep(5000);
-=======
-		//start.start();
-		//sleep(5000);
->>>>>>> a262c5e2d914fcc14810d2818203bf3c15967f16
 		
 		
 		// 키 입력하면 프로그램 실행
